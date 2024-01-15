@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j1CVIMQZKgYcAXCaA+krtmSvDBTyZdNaMXXspussxfI=",
+  "Hash": "XpH7nduCGA7Bu5guC7DVTIPOPCQYD3UYxf+pTfiCgnM=",
   "Source": "PetProjSite",
   "BasePath": "_content/PetProjSite",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PetProjSite.bundle.scp.css"
+    },
+    {
+      "Identity": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Layout.css",
+      "SourceId": "PetProjSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\",
+      "BasePath": "_content/PetProjSite",
+      "RelativePath": "css/Layout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Layout.css"
     },
     {
       "Identity": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\site.css",
