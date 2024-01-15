@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\PetProjSite.bundle.scp.css"
     },
     {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Layout.css",
+      "PackagePath": "staticwebassets\\css\\Layout.css"
+    },
+    {
       "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
