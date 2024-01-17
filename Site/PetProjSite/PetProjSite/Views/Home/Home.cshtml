@@ -1,0 +1,129 @@
+﻿@using PetProjSite.Controllers
+@using PetProjSite.Models;
+@using PetProjSite.Data;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
+</head>
+<body>
+    <header>
+		<div class=main>
+			<!-- основний блок -->
+			<div class="box-bg"></div> <!-- фон портфоліо -->
+
+			<div class="first_screen">
+				<!-- перший екран -->
+				<div class="top">
+					<!-- топ меню -->
+					<div class="top-element">
+						<div class="home_my_services">
+
+							<button class="custom-button-ico button_home">
+								<img src="images/home.png" alt="Your Image">
+							</button>
+
+							<div class="line_1"></div>
+							<button class="my_services">
+								Мої послуги
+							</button>
+						</div>
+						<div class="top-elements_2">
+							<button class="custom-button-ico button-top-1">
+								<img src="images/ico-1.png" alt="Your Image">
+							</button>
+							<button class="custom-button-ico button-top-2">
+								<img src="images/ico-2.png" alt="Your Image">
+							</button>
+							<button class="custom-button-ico button-top-3">
+								<img src="images/ico-3.png" alt="Your Image">
+							</button>
+						</div>
+						<div class="top-butons">
+							<button class="button_text button_login">
+								login
+							</button>
+							<a class="button_text button_sign-up" asp-controller="Registration" asp-action="Registration">
+								Sign up
+							</a>
+							<button class="custom-button-ico">
+								<img src="images/ico_settings.png" alt="Your Image">
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="menu">
+					<span class="text-designer">Дизайнер</span>
+					<div class="box-contact">
+						<div class="frame_portfolio">
+							<span class="text-portfolio">Портфоліо</span>
+						</div>
+						<div class="frame_contacts">
+							<span class="text_contacts">Контакти</span>
+						</div>
+						<div class="frame_number">
+							<span class="text_number">+38(068)999 99-99</span>
+						</div>
+						<button class="button_text">
+							замовити дзвінок
+						</button>
+					</div>
+				</div>
+				<div class="main-screen">
+					<div class="main-bg">
+						<div class="screen-rectangle-bg_1">
+							<div class="screen-image_1"><img src="images/image.png" alt=""></div>
+						</div>
+					</div>
+					<div class="main_text">
+						<div class="text_1">
+							<span class="kotlyar_maya_designer_of_underwear">
+								Котляр Майя
+								Дизайнер спідньої білизни
+							</span><span class="modern_and_stylish_underwear_for_every_taste">
+								Сучасна та стильна білизна на
+								будь який смак
+							</span>
+						</div>
+						<div class="buttons_2">
+							<button class="button_text button_about_me" href=""><span class="text-about_me">Про мене</button>
+							<button class="button_text button_catalog" href=""><span class="text-catalog">Каталог товарів</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-butons">
+				<button class="custom-button-ico">
+					<img src="images/telegram.png" alt="Your Image">
+				</button>
+				<button class="custom-button-ico">
+					<img src="images/instagram.png" alt="Your Image">
+				</button>
+				<button class="custom-button-ico">
+					<img src="images/facebook.png" alt="Your Image">
+				</button>
+			</div>
+		</div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+			&copy; 2024 - PetProjSite
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -17,6 +17,50 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\facebook.png",
+      "PackagePath": "staticwebassets\\images\\facebook.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\home.png",
+      "PackagePath": "staticwebassets\\images\\home.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\ico-1.png",
+      "PackagePath": "staticwebassets\\images\\ico-1.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\ico-2.png",
+      "PackagePath": "staticwebassets\\images\\ico-2.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\ico-3.png",
+      "PackagePath": "staticwebassets\\images\\ico-3.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\ico_settings.png",
+      "PackagePath": "staticwebassets\\images\\ico_settings.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\image.png",
+      "PackagePath": "staticwebassets\\images\\image.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\instagram.png",
+      "PackagePath": "staticwebassets\\images\\instagram.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\password_hide.png",
+      "PackagePath": "staticwebassets\\images\\password_hide.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\password_show.png",
+      "PackagePath": "staticwebassets\\images\\password_show.png"
+    },
+    {
+      "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\telegram.png",
+      "PackagePath": "staticwebassets\\images\\telegram.png"
+    },
+    {
       "Id": "I:\\PetProjectSite\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

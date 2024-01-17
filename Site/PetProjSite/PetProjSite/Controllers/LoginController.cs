@@ -26,9 +26,32 @@ namespace PetProjSite.Controllers
         {
             return View();
         }
-        public IActionResult Index()
+
+        [HttpPost]
+        public IActionResult Login(UserProfile RegisteredUser)
         {
-            return View();
+            // Перевірка чи існує користувач із введеними ім'ям та паролем
+            var user = dtbs.UserProfile.FirstOrDefault(v => v.e_mail == RegisteredUser.e_mail && v.password == RegisteredUser.password);
+
+            if (user != null)
+            {
+                // Користувач знайдений, перенаправляємо його на головну сторінку
+                IsAuthorisated = true;
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ModelState.AddModelError(string.Empty, "Неправильне ім'я користувача або пароль");
+                return View();
+            }
         }
-    }
+
+		[HttpPost]
+		public IActionResult Logout()
+		{
+            Console.WriteLine("11111111111111111111");
+			IsAuthorisated = false;
+			return RedirectToAction("Index", "Home");			
+		}
+	}
 }
