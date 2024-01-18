@@ -14,25 +14,20 @@
 </head>
 <body>
     <header>
-		<div class=main>
-			<!-- основний блок -->
-			<div class="box-bg"></div> <!-- фон портфоліо -->
-
-			<div class="first_screen">
-				<!-- перший екран -->
 				<div class="top">
 					<!-- топ меню -->
 					<div class="top-element">
 						<div class="home_my_services">
 
-							<button class="custom-button-ico button_home">
+							<a class="custom-button-ico button_home" asp-controller="Home" asp-action="Index">
 								<img src="images/home.png" alt="Your Image">
-							</button>
+							</a>
 
 							<div class="line_1"></div>
 							<button class="my_services">
 								Мої послуги
 							</button>
+
 						</div>
 						<div class="top-elements_2">
 							<button class="custom-button-ico button-top-1">
@@ -72,7 +67,6 @@
 						
 					</div>
 				</div>				
-		</div>
     </header>
     <div class="container">
         <main role="main" class="pb-3">

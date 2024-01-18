@@ -45,10 +45,9 @@ body {
 	width: 100%;
 	height: 30px;
 	position: absolute;
-	left: 18px;
 	top: 20px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -56,7 +55,6 @@ body {
 .home_my_services {
 	width: 170px;
 	height: 30px;
-	position: absolute;
 	left: 0px;
 	top: 0px;
 }
@@ -338,7 +336,7 @@ body {
 	top: 0px;
 }
 
-.kotlyar_maya_designer_of_underwear {
+h1 {
 	color: rgba(0, 0, 0, 1);
 	width: 919px;
 	height: 154px;
@@ -347,9 +345,10 @@ body {
 	top: 0px;
 	font-family: Roboto;
 	text-align: left;
-	font-size: 64px;
+	font-size: 111px;
 	letter-spacing: 0;
 }
+
 
 .modern_and_stylish_underwear_for_every_taste {
 	color: rgba(0, 0, 0, 1);
