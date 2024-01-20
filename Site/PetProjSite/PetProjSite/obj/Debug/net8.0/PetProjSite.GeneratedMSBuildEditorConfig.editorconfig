@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Catalog/Catalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xDYXRhbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,10 +64,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Сatalog/catalog.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3Nc0KFhdGFsb2dcY2F0YWxvZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Shared/_Layout.cshtml]

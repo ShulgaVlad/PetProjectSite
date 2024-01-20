@@ -30,7 +30,11 @@ namespace PetProjSite.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     product_name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    product_price = table.Column<int>(type: "int", nullable: false)
+                    product_price = table.Column<int>(type: "int", nullable: false),
+                    product_description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    product_photo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    total_category = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    sub_category = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

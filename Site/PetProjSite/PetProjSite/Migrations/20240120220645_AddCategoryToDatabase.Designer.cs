@@ -12,7 +12,7 @@ using PetProjSite.Data;
 namespace PetProjSite.Migrations
 {
     [DbContext(typeof(DataDbContext))]
-    [Migration("20240115162846_AddCategoryToDatabase")]
+    [Migration("20240120220645_AddCategoryToDatabase")]
     partial class AddCategoryToDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -80,13 +80,29 @@ namespace PetProjSite.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
+                    b.Property<string>("product_description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("product_name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("product_photo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("product_price")
                         .IsRequired()
                         .HasColumnType("int");
+
+                    b.Property<string>("sub_category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("total_category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
 

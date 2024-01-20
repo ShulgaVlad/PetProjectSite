@@ -8,15 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>@ViewData["Title"] - PetProjSite</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/OnlineLibrary.styles.css" asp-append-version="true" />
     <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
 </head>
 <body>
     <header>
 				<div class="top">
 					<!-- топ меню -->
-					<div class="top-element">
+
 						<div class="home_my_services">
 
 							<a class="custom-button-ico button_home" asp-controller="Home" asp-action="Index">
@@ -50,8 +48,8 @@
 							{
 								
 									<a class="button_text button_login" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
-									<form asp-action="Logout" asp-controller="Login" class="button_text button_sign-up">
-										<button type="submit" class="btn">Log out</button>
+									<form asp-action="Logout" asp-controller="Login" class="button_sign-up">
+										<button type="submit" class="button_text  btn">Log out</button>
 									</form>
 								
 							}
@@ -67,29 +65,45 @@
 						</button>
 						}					
 						</div>						
-					</div>
 				</div>				
 			</header>
-			<div class="container">
-				<main role="main" class="pb-3">
+			
 					@RenderBody()
-				</main>
-			</div>
+
 
 			<footer class="border-top footer text-muted">
-				<div class="container">
-					<div class="bottom-butons">
-						<button class="custom-button-ico">
-							<img src="~/images/telegram.png" alt="Your Image">
-						</button>
-						<button class="custom-button-ico">
-							<img src="~/images/instagram.png" alt="Your Image">
-						</button>
-						<button class="custom-button-ico">
-							<img src="~/images/facebook.png" alt="Your Image">
-						</button>
-					</div>
+		<p style="font-size:82px; margin: 20px 0 0 80px; color:white">
+			<strong>
+				Зв’язок
+			</strong>
+		</p>
+		<p style="font-size:24px; margin: 20px 0 0 80px; color:white">
+			Привіт! З нетерпінням чекаю <br> можливості почати сумісну <br> працю з тобою!
+		</p>
+				<div class="bottom-butons">
+					
+					<button class="custom-button-ico">
+						<img src="~/images/telegram.png" alt="Your Image">
+					</button>
+					<button class="custom-button-ico">
+						<img src="~/images/instagram.png" alt="Your Image">
+					</button>
+					<button class="custom-button-ico">
+						<img src="~/images/facebook.png" alt="Your Image">
+					</button>
 				</div>
+		<div class="Call-me">
+
+			<button class="custom-button-ico">
+				<img src="~/images/telegram.png" alt="Your Image">
+			</button>
+			<button class="custom-button-ico">
+				<img src="~/images/instagram.png" alt="Your Image">
+			</button>
+			<button class="custom-button-ico">
+				<img src="~/images/facebook.png" alt="Your Image">
+			</button>
+		</div>
 			</footer>
 			<script src="~/lib/jquery/dist/jquery.min.js"></script>
 			<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
