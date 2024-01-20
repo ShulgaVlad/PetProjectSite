@@ -32,6 +32,7 @@
                 <input asp-for="password" type="password" class="form-control" autocomplete="new-password" aria-required="true" />
                 <label asp-for="password">Password</label>
                 <span asp-validation-for="password" class="text-danger"></span>
+                <img class="custom-button-ico" src="~/images/password_hide.png" id="eyeicon" />
                 <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
             </div>
                 
@@ -39,6 +40,22 @@
         </form>
     </div>
 </div>
+
+<script>
+    let eyeicon = document.getElementById("eyeicon");
+    let password = document.getElementById("password");
+    eyeicon.onclick = function () {
+        if (password.type == "password") {
+            password.type = "text";
+            eyeicon.src = "/images/password_show.png"
+        }
+        else {
+            password.type = "password";
+            eyeicon.src = "/images/password_hide.png"
+        }
+    }
+
+</script>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

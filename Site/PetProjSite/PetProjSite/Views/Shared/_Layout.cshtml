@@ -20,50 +20,54 @@
 						<div class="home_my_services">
 
 							<a class="custom-button-ico button_home" asp-controller="Home" asp-action="Index">
-								<img src="images/home.png" alt="Your Image">
+								<img src="~/images/home.png" alt="Your Image">
 							</a>
 
 							<div class="line_1"></div>
-							<button class="my_services">
+					<a class="my_services" src="">
 								Мої послуги
-							</button>
+							</a>
+							<div class="line_1"></div>
+					<a class="my_services" asp-controller="Сatalog" asp-action="Index" src="">
+								Каталог товарів
+							</a>
 
 						</div>
 						<div class="top-elements_2">
 							<button class="custom-button-ico button-top-1">
-								<img src="images/ico-1.png" alt="Your Image">
+						<img src="~/images/ico-1.png" alt="Your Image">
 							</button>
 							<button class="custom-button-ico button-top-2">
-								<img src="images/ico-2.png" alt="Your Image">
+						<img src="~/images/ico-2.png" alt="Your Image">
 							</button>
 							<button class="custom-button-ico button-top-3">
-								<img src="images/ico-3.png" alt="Your Image">
+						<img src="~/images/ico-3.png" alt="Your Image">
 							</button>
 						</div>
+				<div class="top-butons">
 						@{
 							if (LoginController.IsAuthorisated)
 							{
-								<div class="top-butons">
+								
 									<a class="button_text button_login" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
 									<form asp-action="Logout" asp-controller="Login" class="button_text button_sign-up">
 										<button type="submit" class="btn">Log out</button>
 									</form>
-								</div>
+								
 							}
 							else
 							{
-								<div class="top-butons">
 									<a class="button_text button_login" asp-controller="Login" asp-action="Login">
 										Log in
 									</a>
 									<a class="button_text button_sign-up" asp-controller="Registration" asp-action="Registration">Sign up</a>
-									<button class="custom-button-ico">
-										<img src="images/ico_settings.png" alt="Your Image">
-									</button>
-								</div>
 							}
-
+						<button class="custom-button-ico button-seting">
+							<img src="~/images/ico_settings.png" alt="Your Image">
+						</button>
 						}
+					
+				</div>
 						
 					</div>
 				</div>				
@@ -78,13 +82,13 @@
         <div class="container">
 			<div class="bottom-butons">
 				<button class="custom-button-ico">
-					<img src="images/telegram.png" alt="Your Image">
+					<img src="~/images/telegram.png" alt="Your Image">
 				</button>
 				<button class="custom-button-ico">
-					<img src="images/instagram.png" alt="Your Image">
+					<img src="~/images/instagram.png" alt="Your Image">
 				</button>
 				<button class="custom-button-ico">
-					<img src="images/facebook.png" alt="Your Image">
+					<img src="~/images/facebook.png" alt="Your Image">
 				</button>
 			</div>
         </div>
