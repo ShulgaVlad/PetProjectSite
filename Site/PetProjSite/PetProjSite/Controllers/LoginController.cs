@@ -49,7 +49,6 @@ namespace PetProjSite.Controllers
 		[HttpPost]
 		public IActionResult Logout()
 		{
-            Console.WriteLine("11111111111111111111");
 			IsAuthorisated = false;
 			return RedirectToAction("Index", "Home");			
 		}
