@@ -1,4 +1,9 @@
 
+body {
+    font-family: Roboto, Consolas;
+    min-height: 1500px;
+}
+
 .box-container-of-things {
     justify-content: center;
     display: flex;

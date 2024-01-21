@@ -8,68 +8,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-	<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />
     <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
 </head>
 <body>
     <header>
-		<div class=main>
-			<!-- основний блок -->
-			<div class="box-bg"></div> <!-- фон портфоліо -->
+        <div class=main>
+            <!-- основний блок -->
+            <div class="box-bg"></div> <!-- фон портфоліо -->
 
-			<div class="first_screen">
-				<!-- перший екран -->
-				<div class="menu">
-					<span class="text-designer">Дизайнер</span>
-					<div class="box-contact">
-						<div class="frame_portfolio">
-							<span class="text-portfolio">Портфоліо</span>
-						</div>
-						<div class="frame_contacts">
-							<span class="text_contacts">Контакти</span>
-						</div>
-						<div class="frame_number">
-							<span class="text_number">+38(068)999 99-99</span>
-						</div>
-						<button class="button_text">
-							Переглянути
-						</button>
-					</div>
-				</div>
-				<div class="main-screen">
-					<div class="main-bg">
-						<div class="screen-rectangle-bg_1">
-							<div class="screen-image_1"><img src="images/image.png" alt=""></div>
-						</div>
-					</div>
-					<div class="main_text">
-						<div class="text_1">
-							<span class="kotlyar_maya_designer_of_underwear">
-								Котляр Майя
-								Дизайнер спідньої білизни
-							</span><span class="modern_and_stylish_underwear_for_every_taste">
-								Сучасна та стильна білизна на
-								будь який смак
-							</span>
-						</div>
-						<div class="buttons_2">
-							<button class="button_text button_about_me" href=""><span class="text-about_me">Про мене</button>
-							<button class="button_text button_catalog" href=""><span class="text-catalog">Каталог товарів</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="first_screen">
+                <!-- перший екран -->
+                <div class="menu">
+                    <span class="text-designer">Дизайнер</span>
+                    <div class="box-contact">
+                        <div class="frame_portfolio">
+                            <span class="text-portfolio">Портфоліо</span>
+                        </div>
+                        <div class="frame_contacts">
+                            <span class="text_contacts">Контакти</span>
+                        </div>
+                        <div class="frame_number">
+                            <span class="text_number">+38(068)999 99-99</span>
+                        </div>
+                        <button class="button_text">
+                            Переглянути
+                        </button>
+                    </div>
+                </div>
+                <div class="main-screen">
+                    <div class="main-bg">
+                        <div class="screen-rectangle-bg_1">
+                            <div class="screen-image_1"><img src="images/image.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="main_text">
+                        <div class="text_1">
+                            <span class="kotlyar_maya_designer_of_underwear">
+                                Котляр Майя
+                                Дизайнер спідньої білизни
+                            </span><span class="modern_and_stylish_underwear_for_every_taste">
+                                Сучасна та стильна білизна на
+                                будь який смак
+                            </span>
+                        </div>
+                        <div class="buttons_2">
+                            <button class="button_text button_about_me" href=""><span class="text-about_me">Про мене</span></button>
+                            <button class="button_text button_catalog" href=""><span class="text-catalog">Каталог товарів</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-			&copy; 2024 - PetProjSite
+            &copy; 2024 - PetProjSite
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
