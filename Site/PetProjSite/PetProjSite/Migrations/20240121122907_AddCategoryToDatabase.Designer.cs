@@ -12,7 +12,7 @@ using PetProjSite.Data;
 namespace PetProjSite.Migrations
 {
     [DbContext(typeof(DataDbContext))]
-    [Migration("20240120220645_AddCategoryToDatabase")]
+    [Migration("20240121122907_AddCategoryToDatabase")]
     partial class AddCategoryToDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

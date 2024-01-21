@@ -16,5 +16,12 @@ namespace PetProjSite.Controllers
 		{
 			return View();
 		}
-	}
+
+		public IActionResult AddingNewProduct()
+		{
+			return View();
+		}
+
+
+    }
 }

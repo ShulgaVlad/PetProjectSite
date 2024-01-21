@@ -8,11 +8,12 @@ namespace PetProjSite.Models
         public int id { get; set; }
 
         [Required]
+        [Display(Name = "e-mail")]
         public string e_mail { get; set; }
 
         public int? phone_number { get; set; }
 
-        [Required]
+        [Required]       
         public string first_name { get; set; }
 
         [Required]

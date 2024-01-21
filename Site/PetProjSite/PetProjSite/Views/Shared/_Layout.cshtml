@@ -51,7 +51,14 @@
 									<form asp-action="Logout" asp-controller="Login" class="button_sign-up">
 										<button type="submit" class="button_text  btn">Log out</button>
 									</form>
-								
+
+							}
+							else if (LoginController.IsAdmin)
+							{
+						<a class="button_text button_login" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
+								<form asp-action="Logout" asp-controller="Login" class="button_sign-up">
+									<button type="submit" class="button_text  btn">Log out</button>
+								</form>
 							}
 							else
 							{
