@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = I:\PetProjectSite\PetProjectSite\Site\PetProjSite\PetProjSite
 build_property._RazorSourceGeneratorDebug = 
 
+[I:/PetProjectSite/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Catalog/AddingNewProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xBZGRpbmdOZXdQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/PetProjectSite/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Catalog/Catalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xDYXRhbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/PetProjectSite/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [I:/PetProjectSite/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
