@@ -1,0 +1,144 @@
+.menu {
+    display: flex;
+    align-items: center;
+    padding:20px;
+}
+
+.box-contact {
+    display: flex;
+    position:absolute;
+    right:5%;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.frame_portfolio, .frame_contacts, .frame_number {
+    text-decoration: none;
+    font-family: Roboto, Consolas, Arial;
+    color: black;
+    font-size: 20px;
+    margin: 0 50px 0 0;
+}
+
+.screen {
+    position: relative;
+    height: 580px;
+    overflow: hidden;
+}
+
+    .screen img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+.screen-text-container {
+    position: absolute;
+    top: 120px;
+    left: 220px;
+}
+
+.kotlyar_maya_designer_of_underwear {
+    font-size: 64px;
+}
+
+.modern_and_stylish_underwear_for_every_taste {
+    font-size: 24px;
+}
+
+
+
+.screen-buttons-container {
+    position: absolute;
+    top: 440px;
+    left: 220px;
+}
+
+.bio {
+    height: 1240px;
+}
+
+.bio-bg {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+.bio-about-me {
+    display: flex;
+    margin: 0px auto;
+    width:100%;
+    padding:100px 0;
+    justify-content: center;
+}
+
+.bio-about-me-img-grup {
+    width: 375px;
+    height: 475px;
+    position: relative;
+    display: flex;
+    margin: 0 200px 0 0;
+}
+
+    .bio-about-me-img-grup img {
+        position: absolute;
+        width: 310px;
+        height: 460px;
+        left: 40px;
+        z-index: 1;
+    }
+
+.bio-about-me-img-bg {
+    position: absolute;
+    background-color: rgb(185, 185, 185);
+    width: 310px;
+    height: 460px;
+    top: 15px;
+    left: 15px;
+    z-index: 0;
+}
+
+.bio-about-me-img-line {
+    position: absolute;
+    transform: rotate(-38deg);
+    background-color: black;
+    height: 604px;
+    width:1px;
+    left:184px;
+    top:-64px;
+}
+
+
+.bio-about-me-text {
+    width:350px;
+    display: inline-block;
+}
+
+.portfolio {
+    
+}
+
+.portfolio-bg {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+
+
+.portfolio-imgs {
+    width: 90%;
+    height: 100%;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+    .portfolio-imgs img {
+        width: 350px;
+        height: 350px;
+        display: inline-block;
+        margin: 10px; /* Можете змінити це значення відстані між зображеннями */
+    }

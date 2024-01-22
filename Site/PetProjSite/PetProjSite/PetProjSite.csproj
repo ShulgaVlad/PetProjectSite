@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\catalog.css" />
+    <Content Remove="wwwroot\css\Home.css" />
+    <Content Remove="wwwroot\css\Layout - Копировать.css" />
+    <Content Remove="wwwroot\css\Login.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\catalog.css" />
+    <None Include="wwwroot\css\Home.css" />
+    <None Include="wwwroot\css\Login.css" />
+    <None Include="wwwroot\css\Layout - Копировать.css" />
     <None Include="wwwroot\css\Layout.css" />
   </ItemGroup>
 
@@ -17,6 +28,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Profile\" />
   </ItemGroup>
 
 </Project>
