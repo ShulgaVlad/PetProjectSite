@@ -1,0 +1,37 @@
+﻿@using PetProjSite.Controllers;
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
+    <link rel="stylesheet" type="text/css" href="~/css/catalog.css">
+</head>
+<body>
+    <main role="main" class="pb-3">
+        <section>
+            @foreach (var product in Model)
+            {
+            <div class="box-container-of-things">
+
+                    <div class="box-container-of-things">
+                        <div class=container-of-things>
+                            <img src="@product.product_photo">
+                            <center>
+                                @product.product_description
+                            </center>
+                            <div class="button-box">
+                                <button class="button_text button-things">
+                                    Переглянути
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            </section>            
+    </main>
+
+</body>
