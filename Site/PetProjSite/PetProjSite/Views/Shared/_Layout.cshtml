@@ -33,22 +33,22 @@
             </div>
             <!--
 
-         <div class="top-elements_2">
-                <button class="custom-button-ico button-top-1">
-                    <img src="~/images/ico-1.png" alt="Your Image">
-                </button>
-                <button class="custom-button-ico button-top-2">
-                    <img src="~/images/ico-2.png" alt="Your Image">
-                </button>
-                <button class="custom-button-ico button-top-3">
-                    <img src="~/images/ico-3.png" alt="Your Image">
-                </button>
-            </div>
-            -->
+            <div class="top-elements_2">
+                   <button class="custom-button-ico button-top-1">
+                       <img src="~/images/ico-1.png" alt="Your Image">
+                   </button>
+                   <button class="custom-button-ico button-top-2">
+                       <img src="~/images/ico-2.png" alt="Your Image">
+                   </button>
+                   <button class="custom-button-ico button-top-3">
+                       <img src="~/images/ico-3.png" alt="Your Image">
+                   </button>
+               </div>
+               -->
             <div class="top-butons">
                 @{
                     if (LoginController.IsAuthorisated)
-            {
+                    {
 
                         <a class="button_text button_login_sign-up" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
                         <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
