@@ -1,10 +1,10 @@
 body {
     font-family: Roboto, Consolas;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main {
-    min-height: calc(100vh - var(--footer-height, 0px) - 70px); 
+    min-height: calc(var(--body-height, 0px) - var(--footer-height, 0px) - 70px);
 }
 
 a {
@@ -16,16 +16,15 @@ a {
 }
 
     a:hover {
-        
     }
-    /* верхнє меню */
-    .top {
+/* верхнє меню */
+.top {
     box-shadow: 0px 7px 17.5px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     width: 100%;
     height: 70px;
-    padding:20px 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 /* всі елементи верхнього меню */
@@ -38,7 +37,7 @@ a {
 
 /* блок кнопки home та my_services */
 .home_my_services {
-    position:absolute;
+    position: absolute;
     display: flex;
     height: 30px;
     margin-left: 5%;
@@ -86,7 +85,7 @@ a {
 
 /* Спільні стилі для всіх кнопок */
 .custom-button-ico {
-    width:30px;
+    width: 30px;
     display: inline-block;
     position: relative;
     padding: 0;
@@ -143,15 +142,17 @@ a {
 
 
 
-    .button_catalog {
-        background-color: white;
-        transition: box-shadow 0.3s;
-    }
+.button_catalog {
+    background-color: white;
+    transition: box-shadow 0.3s;
+}
+
     .button_catalog:hover {
         background-color: rgba(255, 255, 255, 1);
         box-shadow: 0px 0px 17.5px rgba(0, 0, 0, 0.25);
         /* Ваш бажаний колір для наведення */
     }
+
     .button_catalog:active {
         background-color: #DEA5C5;
         /* Ваш бажаний колір для натискання */
@@ -167,33 +168,31 @@ a {
 
 .password-box {
     position: relative;
-    display:flex;
+    display: flex;
 }
 
 .form-label {
     position: absolute;
-
 }
 
 .password-ico {
     position: absolute;
-    top:0;
-
+    top: 0;
 }
 
 footer {
     height: 440px;
     width: 100%;
     background-color: #DEA5C5;
-    position:relative;
+    position: relative;
 }
 
-.Call-me{
+.Call-me {
     padding: 100px;
-    width:450px;
-    height:380px;
+    width: 450px;
+    height: 380px;
     background-color: white;
-    position:absolute;
+    position: absolute;
     top: 20px;
     left: 1800px;
 }
