@@ -11,10 +11,8 @@
     },
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      "workingDirectory": "E:\\Files\\Vlad\\Wab\\PetProjectSite",
+      "launchBrowser": true
     },
     "WSL": {
       "commandName": "WSL2",

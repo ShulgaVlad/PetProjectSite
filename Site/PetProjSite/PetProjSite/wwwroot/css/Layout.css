@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    min-height: calc(var(--body-height, 0px) - var(--footer-height, 0px) - 70px);
+    min-height: calc(100vh - var(--footer-height, 0px) - 70px);
 }
 
 a {
