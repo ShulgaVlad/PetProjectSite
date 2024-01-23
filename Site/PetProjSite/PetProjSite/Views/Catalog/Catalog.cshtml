@@ -1,7 +1,5 @@
-﻿@page
-@model PetProjSite.Views.Catalog.CatalogModel
-@{
-}
+﻿@using PetProjSite.Controllers;
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,47 +11,27 @@
     <link rel="stylesheet" type="text/css" href="~/css/catalog.css">
 </head>
 <body>
-    <main>
+    <main role="main" class="pb-3">
         <section>
+            @foreach (var product in Model)
+            {
             <div class="box-container-of-things">
 
-                <div class=container-of-things>
-                    <img src="/images/img-1.png" alt="">
-                    <center>
-                        <p class="container-of-things-text">Опис продукту</p>
-                    </center>
-                    <button class="button_text button-things">
-                        Переглянути
-                    </button>
+                    <div class="box-container-of-things">
+                        <div class=container-of-things>
+                            <img src="@product.product_photo">
+                            <center>
+                                @product.product_description
+                            </center>
+                            <div class="button-box">
+                                <button class="button_text button-things">
+                                    Переглянути
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class=container-of-things>
-                    <img src="/images/img-1.png" alt="">
-                    <center>
-                        <p class="container-of-things-text">Опис продукту</p>
-                    </center>
-                    <button class="button_text button-things">
-                        Переглянути
-                    </button>
-                </div><div class=container-of-things>
-                    <img src="/images/img-1.png" alt="">
-                    <center>
-                        <p class="container-of-things-text">Опис продукту</p>
-                    </center>
-                    <button class="button_text button-things">
-                        Переглянути
-                    </button>
-                </div><div class=container-of-things>
-                    <img src="/images/img-1.png" alt="">
-                    <center>
-                        <p class="container-of-things-text">Опис продукту</p>
-                    </center>
-                    <button class="button_text button-things">
-                        Переглянути
-                    </button>
-                </div>
-            </div>
-        </section>
+            }
+        </section>            
     </main>
-
 </body>

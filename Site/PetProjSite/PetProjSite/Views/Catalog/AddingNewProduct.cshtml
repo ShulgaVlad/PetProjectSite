@@ -1,46 +1,51 @@
-﻿@model Product
+@using PetProjSite.Controllers;
 @{
+    if (LoginController.IsAdmin)
+    {
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="register">Add product</h1>
+                <form asp-action="AddingNewProduct">
+
+
+                    <hr />
+                    <div class="text-danger"></div>
+                    <div class="form-floating">
+                        <input asp-for="product_name" class="form-control" aria-required="true" />
+                        <label asp-for="product_name">Product name: </label>
+                        <span asp-validation-for="product_name" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating">
+                        <input asp-for="product_price" class="form-control" aria-required="true" />
+                        <label asp-for="product_price">Price: </label>
+                        <span asp-validation-for="product_price" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating">
+                        <input asp-for="product_description" class="form-control" aria-required="true" />
+                        <label asp-for="product_description">Descriprion: </label>
+                        <span asp-validation-for="product_description" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating">
+                        <input asp-for="product_photo" class="form-control" aria-required="true" />
+                        <label asp-for="product_photo">Photo: </label>
+                        <span asp-validation-for="product_photo" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating">
+                        <input asp-for="total_category" class="form-control" autocomplete="new-password" aria-required="true" />
+                        <label asp-for="total_category">Total category: </label>
+                        <span asp-validation-for="total_category" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating">
+                        <input asp-for="sub_category" class="form-control" autocomplete="new-password" aria-required="true" />
+                        <label asp-for="sub_category">Sub category: </label>
+                        <span asp-validation-for="sub_category" class="text-danger"></span>
+                    </div>
+                    <button id="addSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Add</button>
+                </form>
+            </div>
+        </div>
+    }
 }
-<div class="row">
-    <div class="col-md-4">
-        <h1 class="register">Add product</h1>
-        <form asp-action="AddedBook">
-            <hr />
-            <div class="text-danger"></div>
-            <div class="form-floating">
-                <input asp-for="product_name" class="form-control" aria-required="true" />
-                <label asp-for="product_name">Product name: </label>
-                <span asp-validation-for="product_name" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="product_price" class="form-control" aria-required="true" />
-                <label asp-for="product_price">Price: </label>
-                <span asp-validation-for="product_price" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="product_description" class="form-control" aria-required="true" />
-                <label asp-for="product_description">Descriprion: </label>
-                <span asp-validation-for="product_description" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="product_photo" class="form-control" aria-required="true" />
-                <label asp-for="product_photo">Photo: </label>
-                <span asp-validation-for="product_photo" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="total_category" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="total_category">Total category: </label>
-                <span asp-validation-for="total_category" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="sub_category" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="sub_category">Sub category: </label>
-                <span asp-validation-for="sub_category" class="text-danger"></span>
-            </div>
-            <button id="addSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Add</button>
-        </form>
-    </div>
-</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
