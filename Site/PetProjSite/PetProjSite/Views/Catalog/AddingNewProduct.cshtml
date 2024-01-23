@@ -1,10 +1,13 @@
 ﻿@model Product
+
+<link rel="stylesheet" type="text/css" href="~/css/Login.css">
 @using PetProjSite.Controllers;
 @{
     if (LoginController.IsAdmin)
     {
-        <div class="row">
-            <div class="col-md-4">
+        <main>
+        <section>
+            <div class="login-box">
                 <h1 class="register">Add product</h1>
                 <form asp-action="AddingNewProduct">
 
@@ -43,8 +46,9 @@
                     </div>
                     <button id="addSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Add</button>
                 </form>
-            </div>
-        </div>
+                </div>
+            </section>
+        </main>
     }
 }
 
