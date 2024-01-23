@@ -1,19 +1,17 @@
 
-body {
-    font-family: Roboto, Consolas;
-    min-height: 1500px;
-}
+
 
 .box-container-of-things {
     justify-content: center;
     display: flex;
-    max-width:80%;
-    margin:0 auto;
+    max-width: 80%;
+    margin: 0 auto;
     flex-wrap: wrap;
 }
 
+
 .container-of-things {
-    justify-content: center;
+    text-align: center;
     width: 430px;
     height: 500px;
     margin: 20px 10px 0px 10px;
@@ -24,16 +22,20 @@ body {
         height: 430px;
     }
 
-.button-things {
+button-things {
     display: block;
     position: absolute;
     vertical-align: middle;
 }
 
 .button-box {
-    height:30px;
+    height: 30px;
     display: flex;
     justify-content: center;
-    position:relative;
-    align-items:center;
+    position: relative;
+    align-items: center;
+}
+
+.container-of-things-text{
+    font-size:20px;
 }

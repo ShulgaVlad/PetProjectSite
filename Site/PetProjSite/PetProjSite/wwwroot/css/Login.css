@@ -1,0 +1,25 @@
+.login-box{
+    width:30%;
+    margin:auto;
+    padding-top:300px;
+}
+
+.login-text, .register-text {
+    text-align: center;
+    font-weight: bold;
+}
+
+.button-eyeicon{
+    position:absolute;
+    right:10px;
+    top:14px;
+    opacity: 50%;
+}
+
+.form-floating{
+    margin-bottom:20px;
+}
+
+.button_login{
+    font-size:12px;
+}

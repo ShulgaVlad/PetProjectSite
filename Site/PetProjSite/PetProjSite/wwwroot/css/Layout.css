@@ -1,21 +1,28 @@
 body {
     font-family: Roboto, Consolas;
-    min-height: 1520px;
+    height: 100vh;
+}
+
+main {
+    min-height: calc(100vh - var(--footer-height, 0px) - 70px); 
 }
 
 a {
     text-decoration: none;
     font-family: Roboto, Consolas, Arial;
-    font-weight:bold;
+    font-weight: bold;
     color: black;
+    font-size: 24px;
 }
 
-/* верхнє меню */
-.top {
+    a:hover {
+        
+    }
+    /* верхнє меню */
+    .top {
     box-shadow: 0px 7px 17.5px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 1);
     display: flex;
-    justify-content: space-between;
     width: 100%;
     height: 70px;
     padding:20px 0 20px 0;
@@ -24,18 +31,17 @@ a {
 /* всі елементи верхнього меню */
 .top-element {
     display: flex;
-    justify-content: space-between;
+    position: relative;
     width: 100%;
     height: 30px;
 }
 
 /* блок кнопки home та my_services */
 .home_my_services {
+    position:absolute;
     display: flex;
     height: 30px;
     margin-left: 5%;
-    left: 0px;
-    top: 0px;
 }
 
 /*кнопка home*/
@@ -62,7 +68,6 @@ a {
     border: none;
     color: rgba(0, 0, 0, 1);
     font-family: Roboto, Consolas;
-    font-size: 20px;
     letter-spacing: 0;
     cursor: pointer;
 }
@@ -74,8 +79,7 @@ a {
 }
 
 .top-butons {
-    position: relative;
-    width: 200px;
+    position: absolute;
     right: 5%;
     display: flex;
 }
@@ -87,7 +91,7 @@ a {
     position: relative;
     padding: 0;
     margin: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.00);
     overflow: hidden;
     border: none;
     cursor: pointer;
@@ -107,33 +111,53 @@ a {
 
 
 .button_text {
-    background-color: rgb(255, 100, 100);
-    height: 30px;
-    padding: 6px;
+    background-color: #ffa5d4;
+    padding: 2px 6px;
     margin: 0;
+    font-size: 24px;
     border-radius: 5px;
     transition: background-color 0.3s;
     cursor: pointer;
     border: none;
     font-weight: bold;
+    color: black;
 }
 
     .button_text:hover {
-        background-color: #ff0000;
+        background-color: #ff4ca9;
         /* Ваш бажаний колір для наведення */
     }
 
     .button_text:active {
-        background-color: #990000;
+        background-color: #ae2f73;
         /* Ваш бажаний колір для натискання */
     }
 
-.button_login {
+.button_login_sign-up {
+    margin-right: 10px;
 }
 
-.button_sign-up {
-    margin-left:5px;
-}
+    .button_login_sign-up:hover {
+        color: black;
+    }
+
+
+
+    .button_catalog {
+        background-color: white;
+        transition: box-shadow 0.3s;
+    }
+    .button_catalog:hover {
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 17.5px rgba(0, 0, 0, 0.25);
+        /* Ваш бажаний колір для наведення */
+    }
+    .button_catalog:active {
+        background-color: #DEA5C5;
+        /* Ваш бажаний колір для натискання */
+    }
+
+
 
 .bottom-butons {
     position: absolute;
@@ -161,12 +185,11 @@ footer {
     height: 440px;
     width: 100%;
     background-color: #DEA5C5;
-    position: absolute;
-    bottom: 0;
-
+    position:relative;
 }
 
 .Call-me{
+    padding: 100px;
     width:450px;
     height:380px;
     background-color: white;

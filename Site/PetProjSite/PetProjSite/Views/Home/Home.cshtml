@@ -1,78 +1,147 @@
-﻿@using PetProjSite.Controllers
-@using PetProjSite.Models;
-@using PetProjSite.Data;
-<!DOCTYPE html>
-<html lang="en">
-<head>
+﻿<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
-</head>
-<body>
-    <header>
-        <div class=main>
-            <!-- основний блок -->
-            <div class="box-bg"></div> <!-- фон портфоліо -->
+    <!-- <link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />  -->
 
-            <div class="first_screen">
-                <!-- перший екран -->
-                <div class="menu">
-                    <span class="text-designer">Дизайнер</span>
-                    <div class="box-contact">
-                        <div class="frame_portfolio">
-                            <span class="text-portfolio">Портфоліо</span>
-                        </div>
-                        <div class="frame_contacts">
-                            <span class="text_contacts">Контакти</span>
-                        </div>
-                        <div class="frame_number">
-                            <span class="text_number">+38(068)999 99-99</span>
-                        </div>
-                        <button class="button_text">
-                            Переглянути
-                        </button>
-                    </div>
+    <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
+    <link rel="stylesheet" type="text/css" href="~/css/Home.css">
+
+    <title>HomePage</title>
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <main>
+
+        <section class="menu">
+
+            <h2 style="margin: 0 500px 0 320px;"><strong>Дизайнер</strong></h2>
+            <div class="box-contact">
+
+                <button id="frame_portfolio" class="frame_portfolio my_services">
+                    <span class="text-portfolio">Портфоліо</span>
+                </button>
+
+                <button id="frame_contacts" class="frame_contacts my_services">
+                    <span class="text_contacts">Контакти</span>
+                </button>
+
+                <div class="frame_number">
+                    <span class="text_number">+38(068)999 99-99</span>
                 </div>
-                <div class="main-screen">
-                    <div class="main-bg">
-                        <div class="screen-rectangle-bg_1">
-                            <div class="screen-image_1"><img src="images/image.png" alt=""></div>
-                        </div>
+
+                <button class="button_text">
+                    Замовити дзвінок
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="screen">
+
+            <img src="~/images/img-1.png" alt="Your Image">
+
+            <div class="screen-text-container">
+
+                <p class="kotlyar_maya_designer_of_underwear">
+                    <strong>
+                        Котляр Майя<br>
+                        Дизайнер спідньої білизни
+                    </strong>
+                </p>
+
+                <p class="modern_and_stylish_underwear_for_every_taste">
+                    <strong>
+                        Сучасна та стильна білизна на<br>
+                        будь який смак
+                    </strong>
+                </p>
+
+            </div>
+
+            <div class="screen-buttons-container">
+                <button class="button_text button_about_me" href=""><span class="text-about_me">Про мене</span></button>
+                <button class="button_text button_catalog" style="" href=""><span class="text-catalog">Каталог товарів</span></button>
+            </div>
+
+        </section>
+
+        <section class="bio">
+
+            <div class="bio-bg">
+                <div class="bio-about-me">
+
+                    <div class="bio-about-me-img-grup">
+                        <img src="~/images/portrait.png" alt="Your Image">
+                        <div class="bio-about-me-img-bg"></div>
+                        <div class="bio-about-me-img-line"></div>
                     </div>
-                    <div class="main_text">
-                        <div class="text_1">
-                            <span class="kotlyar_maya_designer_of_underwear">
-                                Котляр Майя
-                                Дизайнер спідньої білизни
-                            </span><span class="modern_and_stylish_underwear_for_every_taste">
-                                Сучасна та стильна білизна на
-                                будь який смак
-                            </span>
-                        </div>
-                        <div class="buttons_2">
-                            <button class="button_text button_about_me" href=""><span class="text-about_me">Про мене</span></button>
-                            <button class="button_text button_catalog" href=""><span class="text-catalog">Каталог товарів</span></button>
-                        </div>
+
+                    <div class="bio-about-me-text">
+                        <p style="font-size:42px"><strong>Про  мене</strong></p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
+                    </div>
+
+                </div>
+                <div class="bio-about-me">
+                    <div class="bio-about-me-text" style="display:inline-block; margin:0 auto;">
+                        <p style="font-size:42px">
+                            <strong>
+                                Як я працюю <br>з клієнтами
+                            </strong>
+                        </p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
+                        <p style="font-size:24px">Text</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main role="main" class="pb-3">
-        @RenderBody()
+
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            
+            <div class="portfolio-bg">
+                <p style="font-size:42px">
+                    <strong>
+                        Портфоліо
+                    </strong>
+                </p>
+                <div class="portfolio-imgs">
+                <img src="~/images/portfolio-img-1.png" alt="Your Image">
+                <img src="~/images/portfolio-img-2.png" alt="Your Image">
+                <img src="~/images/portfolio-img-3.png" alt="Your Image">
+                <img src="~/images/portfolio-img-4.png" alt="Your Image">
+                <img src="~/images/portfolio-img-5.png" alt="Your Image">
+                <img src="~/images/portfolio-img-6.png" alt="Your Image">
+                <img src="~/images/portfolio-img-7.png" alt="Your Image">
+                <img src="~/images/portfolio-img-8.png" alt="Your Image">
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="border-top footer text-muted">
+    <!-- <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - PetProjSite
         </div>
-    </footer>
+    </footer>  -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
