@@ -12,6 +12,7 @@ namespace PetProjSite.Models
         [Required]
         public string? Password { get; set; }
         [Required]
+        [Display(Name = "e-mail")]
         public string? Email { get; set; }
     }
 }

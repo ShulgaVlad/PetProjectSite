@@ -1,0 +1,41 @@
+
+
+
+.box-container-of-things {
+    justify-content: center;
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+.container-of-things {
+    text-align: center;
+    width: 430px;
+    height: 500px;
+    margin: 20px 10px 0px 10px;
+}
+
+    .container-of-things img {
+        width: 430px;
+        height: 430px;
+    }
+
+button-things {
+    display: block;
+    position: absolute;
+    vertical-align: middle;
+}
+
+.button-box {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.container-of-things-text{
+    font-size:20px;
+}

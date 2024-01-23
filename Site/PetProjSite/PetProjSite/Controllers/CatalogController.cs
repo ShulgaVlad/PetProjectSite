@@ -1,4 +1,3 @@
-﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Build.Tasks.Deployment.Bootstrapper;
 using Microsoft.EntityFrameworkCore;
 using PetProjSite.Data;
@@ -47,6 +46,5 @@ namespace PetProjSite.Controllers
             return RedirectToAction("Home", "Home");
 
         }
-
     }
 }

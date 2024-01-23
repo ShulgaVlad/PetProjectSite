@@ -9,7 +9,7 @@ namespace PetProjSite.Models
         public int Id { get; set; }
         [ForeignKey("UserId")]
 
-        public UserProfile? UserProfile { get; set; }       
+        public UserProfile? UserProfile { get; set; }
         [ForeignKey("ProductId")]
 
         public Product? Product { get; set; }

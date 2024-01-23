@@ -1,335 +1,122 @@
-﻿@using PetProjSite.Controllers
+@using PetProjSite.Controllers;
 @using PetProjSite.Models;
 @using PetProjSite.Data;
-<link rel="stylesheet" type="text/css" href="~/css/Layout.css">
-<div class=home_1_2>
-    <div class="rectangle_bg_4_173"></div>
-    <div class=communication_5_217>
-        <div class=elements_5_216>
-            <div class=text_5_215>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PetProjSite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
+    <!-- <link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />  -->
+</head>
+<body>
+    <header>
+        <div class="top">
+            <!-- топ меню -->
+
+            <div class="home_my_services">
+
+                <a class="custom-button-ico button_home" asp-controller="Home" asp-action="Home">
+                    <img src="~/images/home.png" alt="Your Image">
+                </a>
+
+                <div class="line_1"></div>
+                <a class="my_services" src="">
+                    Мої послуги
+                </a>
+                <div class="line_1"></div>
+                <a class="my_services" asp-controller="Catalog" asp-action="Catalog">
+                    Каталог товарів
+                </a>
+            </div>
+            <!--
+
+         <div class="top-elements_2">
+                <button class="custom-button-ico button-top-1">
+                    <img src="~/images/ico-1.png" alt="Your Image">
+                </button>
+                <button class="custom-button-ico button-top-2">
+                    <img src="~/images/ico-2.png" alt="Your Image">
+                </button>
+                <button class="custom-button-ico button-top-3">
+                    <img src="~/images/ico-3.png" alt="Your Image">
+                </button>
+            </div>
+            -->
+            <div class="top-butons">
                 @{
-                    if (LoginController.IsAdmin)
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="AdminBooks">Edit books catalog</a>
-                        </li>
-                        <div class="buttons">
-                            <li class="nav-item">
-                                <form asp-action="AdminLogOut" asp-controller="Profile" method="post">
-                                    <button type="submit" class="btn">Log out</button>
-                                </form>
-                            </li>
-                        </div>
+                    if (LoginController.IsAuthorisated)
+            {
+
+                        <a class="button_text button_login_sign-up" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
+                        <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
+                            <button type="submit" class="button_text  btn">Log out</button>
+                        </form>
+
                     }
-                    else if (LoginController.IsAuthorisated)
+                    else if (LoginController.IsAdmin)
                     {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Books">Books catalog</a>
-                        </li>
-                        <div class="buttons">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
-                            </li>
-                            <li class="nav-item">
-                                <form asp-action="LogOut" asp-controller="Profile" method="post">
-                                    <button type="submit" class="btn">Log out</button>
-                                </form>
-                            </li>
-                        </div>
+                        <a class="button_text button_login_sign-up" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
+                        <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
+                            <button type="submit" class="button_text  btn">Log out</button>
+                        </form>
                     }
                     else
                     {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <div class="buttons">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Registration" asp-action="Registration">Registration</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Login">Log in</a>
-                            </li>
-                        </div>
+                        <a class="button_text button_login_sign-up" asp-controller="Login" asp-action="Login">
+                            Log in
+                        </a>
+                        <a class="button_text button_login_sign-up" asp-controller="Registration" asp-action="Registration">Sign up</a>
                     }
+                    <button class="custom-button-ico button-seting">
+                        <img src="~/images/ico_settings.png" alt="Your Image">
+                    </button>
                 }
-                <span class="communication_5_176">Зв’язок</span><span class="text_5_174">
-                    Привіт! З нетерпінням чекаю
-                    можливості почати сумісну працю з тобою!
-                </span>
-                <div class=social_networks_5_214>
-                    <div class=telegram_5_211>
-                        <div class=ellipse_5_210>
-                            <div class="img_5_207"></div>
-                        </div>
-                    </div>
-                    <div class="instagram_5_205"></div>
-                    <div class="facebook_5_213"></div>
-                </div>
-            </div>
-            <div class=call_me_5_203>
-                <div class=frame_5_202>
-                    <div class=frame_call_me_5_201>
-                        <span class="call_me_5_179">Подзвони мені</span>
-                        <div class=number_5_200>
-                            <span class="_38_068_999_99_99_5_198">+38(068)999 99-99</span><span class="_38_068_999_99_99_5_199">+38(068)999 99-99</span>
-                        </div>
-                    </div>
-                    <div class=frame_hours_of_work_5_197>
-                        <span class="hours_of_work_5_186">Години роботи</span>
-                        <div class=frame_hours_5_196>
-                            <div class=weekdays_5_194>
-                                <span class="md_fr_5_189">Нп-пт</span>
-                                <div class="line_5_191"></div><span class="time">10:00 - 20:00</span>
-                            </div>
-                            <div class=weekend_5_195>
-                                <span class="st_snd_5_190">Сб-нд</span>
-                                <div class="line_5_193"></div><span class="weekend_5_188">вихідні</span>
-                            </div>
-                        </div>
-                        
-                     </div>
-                </div>
             </div>
         </div>
-    </div>
-    <div class=portfolio_10_218>
-        <span class="portfolio_2_153">Портфоліо</span>
-        <div class=imgs_4_171>
-            <div class="img_1_4_155"></div>
-            <div class="img_2_4_161"></div>
-            <div class="img_3_4_159"></div>
-            <div class="img_4_4_157"></div>
-            <div class="img_5_4_163"></div>
-            <div class="img_6_4_165"></div>
-            <div class="img_7_4_167"></div>
-            <div class="img_8_4_169"></div>
-        </div>
-    </div>
-    <div class=about_me_10_225>
-        <div class=frame_1_10_224>
-            <div class=element_1_10_223>
-                <div class="line_2_95"></div>
-                <div class="rectangle_bg_2_93"></div>
-                <div class="img_2_94"></div>
-            </div>
-            <div class=element_2_10_220>
-                <span class="about_me_2_91">Про мене</span>
-                <div class=text_2_152>
-                    <div class="rectangle_14_2_112"></div>
-                    <div class="rectangle_13_2_113"></div>
-                    <div class="rectangle_12_2_111"></div>
-                    <div class="rectangle_11_2_108"></div>
-                    <div class="rectangle_10_2_109"></div>
-                    <div class="rectangle_9_2_107"></div>
-                    <div class="rectangle_8_2_106"></div>
-                    <div class="rectangle_7_2_104"></div>
-                    <div class="rectangle_6_2_105"></div>
-                    <div class="rectangle_5_2_103"></div>
-                    <div class="rectangle_4_2_102"></div>
-                    <div class="rectangle_3_2_101"></div>
-                    <div class="rectangle_2_2_100"></div>
-                    <div class="rectangle_1_2_97"></div>
-                </div>
-            </div>
-        </div>
-        <div class=frame_10_219>
-            <span class="how_i_work_with_clients_2_96">
-                Як я працюю
-                з клієнтами
-            </span>
-            <div class=text_2_151>
-                <div class="rectangle_14_2_137"></div>
-                <div class="rectangle_13_2_136"></div>
-                <div class="rectangle_12_2_135"></div>
-                <div class="rectangle_11_2_150"></div>
-                <div class="rectangle_10_2_149"></div>
-                <div class="rectangle_9_2_148"></div>
-                <div class="rectangle_8_2_147"></div>
-                <div class="rectangle_7_2_146"></div>
-                <div class="rectangle_6_2_145"></div>
-                <div class="rectangle_5_2_144"></div>
-                <div class="rectangle_4_2_142"></div>
-                <div class="rectangle_3_2_141"></div>
-                <div class="rectangle_2_2_140"></div>
-                <div class="rectangle_1_2_139"></div>
-            </div>
-        </div>
-    </div>
-    <div class=first_screen_2_89>
-        <div class=top_2_74>
-            <div class=elements_1_2_73>
-                <div class=home_my_services_2_72>
-                    <div class=home_icon_1_8>
-                        <div class="vector_1_7"></div>
-                    </div>
-                    <div class="line_1_2_42"></div><span class="my_services_2_43">Мої послуги</span>
-                </div>
-                <div class=elements_2_2_71>
-                    <div class=ico_1_2_70>
-                        <div class="rectangle_1_2_68"></div>
-                        <div class="rectangle_2_2_67"></div>
-                        <div class="rectangle_3_2_66"></div>
-                        <div class="rectangle_4_2_69"></div>
-                    </div>
-                    <div class=ico_2_2_64>
-                        <div class="vector_2_65"></div>
-                    </div>
-                    <div class=ico_3_1_11>
-                        <div class="vector_1_10"></div>
-                    </div>
-                </div>
-                <div class="ico_settings_1_28"></div>
-            </div>
-        </div>
-        <div class=manu_2_82>
-            <span class="designer_2_51">Дизайнер</span>
-            <div class=contact_2_81>
-                <div class=contact_element_2_78>
-                    <div class=frame_portfolio_2_75><span class="portfolio_2_46">Портфоліо</span></div>
-                    <div class=frame_contacts_2_76><span class="contacts_2_47">Контакти</span></div>
-                    <div class=number_2_77><span class="_38_068_999_99_99_2_48">+38(068)999 99-99</span></div>
-                </div>
-                <div class=button_call_2_80><span class="order_a_call_2_50">Замовити дзвінок</span></div>
-            </div>
-        </div>
-        <div class=screen_2_88>
-            <div class=bg_2_62>
-                <div class=rectangle_2_60>
-                    <div class="image_2_59"></div>
-                </div>
-            </div>
-            <div class=main_text_2_87>
-                <div class=text_2_83>
-                    <span class="kotlyar_maya_designer_of_underwear_2_52">
-                        Котляр Майя
-                        Дизайнер спідньої білизни
-                    </span><span class="modern_and_stylish_underwear_for_every_taste_2_53">
-                        Сучасна та стильна білизна на
-                        будь який смак
-                    </span>
-                </div>
-                <div class=buttons_2_86>
-                    <div class=button_about_me_2_84><span class="about_me_2_55">Про мене</span></div>
-                    <div class=button_catalog_2_85><span class="catalog_2_57">Каталог товарів</span></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-<<<<<<< Updated upstream
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - OnlineLibrary
+        <p style="font-size:82px; margin: 20px 0 0 80px; color:white">
+            <strong>
+                Зв’язок
+            </strong>
+        </p>
+        <p style="font-size:24px; margin: 20px 0 0 80px; color:white">
+            Привіт! З нетерпінням чекаю <br> можливості почати сумісну <br> працю з тобою!
+        </p>
+        <div class="bottom-butons">
+
+            <button class="custom-button-ico">
+                <img src="~/images/telegram1.png" alt="Your Image">
+            </button>
+            <button class="custom-button-ico">
+                <img src="~/images/instagram.png" alt="Your Image">
+            </button>
+            <button class="custom-button-ico">
+                <img src="~/images/facebook.png" alt="Your Image">
+            </button>
+        </div>
+        <div class="Call-me">
+            <h2>Подзвони мені</h2>
+            <p>+38(068)999 99-99</p>
+            <p>+38(068)999 99-99</p>
+            <h2>Години роботи</h2>
+            <p></p>
+            <p></p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-</div>
-=======
-						<div class="home_my_services">
-
-							<a class="custom-button-ico button_home" asp-controller="Home" asp-action="Home">
-								<img src="~/images/home.png" alt="Your Image">
-							</a>
-
-							<div class="line_1"></div>
-							<a class="my_services" src="">
-								Мої послуги
-							</a>
-							<div class="line_1"></div>
-							<a class="my_services" asp-controller="Catalog" asp-action="Catalog">
-								Каталог товарів
-							</a>
-
-						</div>
-						<div class="top-elements_2">
-							<button class="custom-button-ico button-top-1">
-						<img src="~/images/ico-1.png" alt="Your Image">
-							</button>
-							<button class="custom-button-ico button-top-2">
-						<img src="~/images/ico-2.png" alt="Your Image">
-							</button>
-							<button class="custom-button-ico button-top-3">
-						<img src="~/images/ico-3.png" alt="Your Image">
-							</button>
-						</div>
-						<div class="top-butons">
-						@{
-							if (LoginController.IsAuthorisated)
-							{
-								
-									<a class="button_text button_login" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
-									<form asp-action="Logout" asp-controller="Login" class="button_sign-up">
-										<button type="submit" class="button_text  btn">Log out</button>
-									</form>
-
-							}
-							else if (LoginController.IsAdmin)
-							{
-						<a class="button_text button_login" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
-								<form asp-action="Logout" asp-controller="Login" class="button_sign-up">
-									<button type="submit" class="button_text  btn">Log out</button>
-								</form>
-							}
-							else
-							{
-									<a class="button_text button_login" asp-controller="Login" asp-action="Login">
-										Log in
-									</a>
-									<a class="button_text button_sign-up" asp-controller="Registration" asp-action="Registration">Sign up</a>
-							}
-						<button class="custom-button-ico button-seting">
-							<img src="~/images/ico_settings.png" alt="Your Image">
-						</button>
-						}					
-						</div>						
-				</div>				
-			</header>
-			
-					@RenderBody()
-
-
-			<footer class="border-top footer text-muted">
-		<p style="font-size:82px; margin: 20px 0 0 80px; color:white">
-			<strong>
-				Зв’язок
-			</strong>
-		</p>
-		<p style="font-size:24px; margin: 20px 0 0 80px; color:white">
-			Привіт! З нетерпінням чекаю <br> можливості почати сумісну <br> працю з тобою!
-		</p>
-				<div class="bottom-butons">
-					
-					<button class="custom-button-ico">
-						<img src="~/images/telegram.png" alt="Your Image">
-					</button>
-					<button class="custom-button-ico">
-						<img src="~/images/instagram.png" alt="Your Image">
-					</button>
-					<button class="custom-button-ico">
-						<img src="~/images/facebook.png" alt="Your Image">
-					</button>
-				</div>
-		<div class="Call-me">
-			<h2>Подзвони мені</h2>
-			<p>+38(068)999 99-99</p>
-			<p>+38(068)999 99-99</p>
-			<h2>Години роботи</h2>
-			<p></p>
-			<p></p>
-		</div>
-			</footer>
-			<script src="~/lib/jquery/dist/jquery.min.js"></script>
-			<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-			<script src="~/js/site.js" asp-append-version="true"></script>
-			@await RenderSectionAsync("Scripts", required: false)
-	</body>
+</body>
 </html>
->>>>>>> Stashed changes
