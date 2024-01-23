@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <!-- <link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />  -->
     <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
@@ -12,25 +12,22 @@
 <body>
     <main>
         <section>
-            @foreach (var product in Model)
-            {
-                <div class="box-container-of-things">
-
-                    <div class="box-container-of-things">
-                        <div class=container-of-things>
-                            <img src="@product.product_photo">
-                            <center>
-                                @product.product_description
-                            </center>
-                            <div class="button-box">
-                                <button class="button_text button-things">
-                                    Переглянути
-                                </button>
-                            </div>
+            <div class="box-container-of-things">
+                @foreach (var product in Model)
+                {
+                    <div class=container-of-things>
+                        <img src="@product.product_photo">
+                        <div class="container-of-things-text">
+                            @product.product_description
+                        </div>
+                        <div class="button-box">
+                            <button class="button_text button-things">
+                                Переглянути
+                            </button>
                         </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         </section>
     </main>
 

@@ -14,7 +14,7 @@
     text-align: center;
     width: 430px;
     height: 500px;
-    margin: 20px 10px 0px 10px;
+    margin: 20px 20px 0px 20px;
 }
 
     .container-of-things img {
@@ -36,6 +36,7 @@ button-things {
     align-items: center;
 }
 
-.container-of-things-text{
-    font-size:20px;
+.container-of-things-text {
+    font-size: 20px;
+    padding: 5px;
 }
