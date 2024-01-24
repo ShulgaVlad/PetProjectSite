@@ -1,0 +1,52 @@
+﻿@model Product
+
+<link rel="stylesheet" type="text/css" href="~/css/Login.css">
+
+@using PetProjSite.Controllers;
+@{
+    if (LoginController.IsAdmin)
+    {
+        <main>
+            <section>
+                <div class="login-box">
+                    <h1 class="register">Edit product</h1>
+                    <form asp-action="EditingProduct">
+
+
+                        <hr />
+                        <div class="text-danger"></div>
+                        @{
+                            var catalogId = TempData["CatalogId"];
+                            int converted = Convert.ToInt32(TempData["CatalogId"]);
+                        }
+                        <input type="hidden" asp-for="id" value="@converted" />
+                        <div class="form-floating">                            
+                        <input name="newProductName" asp-for="product_name" class="form-control" aria-required="true" />
+                        </div>
+                        <div class="form-floating">
+                        <input name="newProductPrice" asp-for="product_price" class="form-control" aria-required="true" />
+                        </div>
+                        <div class="form-floating">
+                            <input name="newProductDescriprion" asp-for="product_description" class="form-control" aria-required="true" />
+                        </div>
+                        <div class="form-floating">
+                            <input name="newProductPhoto" asp-for="product_photo" class="form-control" aria-required="true" />
+                        </div>
+                        <div class="form-floating">
+                            <input name="newProductTotalCategory" asp-for="total_category" class="form-control" autocomplete="new-password" aria-required="true" />
+                        </div>
+                        <div class="form-floating">
+                            <input name="newProductSubCategory" asp-for="sub_category" class="form-control" autocomplete="new-password" aria-required="true" />
+                        </div>
+                        <button id="addSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Add</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    }
+}
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
