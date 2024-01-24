@@ -3,6 +3,7 @@ using Microsoft.Build.Tasks.Deployment.Bootstrapper;
 using Microsoft.EntityFrameworkCore;
 using PetProjSite.Data;
 using PetProjSite.Models;
+using System.Net;
 
 namespace PetProjSite.Controllers
 {
@@ -23,9 +24,26 @@ namespace PetProjSite.Controllers
 		public IActionResult AddingNewProduct()
 		{
 			return View();
-		}
+		}    
+        
+        public IActionResult EditingProduct() 
+        {
+            return View();
+        }
 
-		[HttpPost]
+        [HttpPost]
+        public ActionResult GetProductId(int catalogId)
+        {
+            if (LoginController.IsAdmin)
+            {
+                int storedProductId = catalogId;
+                TempData["CatalogId"] = storedProductId;
+                return RedirectToAction("EditingProduct");
+            }
+            return RedirectToAction("Catalog");
+        }
+
+        [HttpPost]
         public IActionResult AddingNewProduct(Models.Product product)
         {
             if (ModelState.IsValid)
@@ -39,13 +57,46 @@ namespace PetProjSite.Controllers
                         dtbs.Product.Add(product);
                         dtbs.SaveChanges();
                     }
-                    return RedirectToAction("Home", "Home");
-                }
-                
+                    return RedirectToAction("Catalog", "Catalog");
+                }                
             }
             
             return RedirectToAction("Home", "Home");
 
+        }
+
+        [HttpPost]
+        public IActionResult DeleteProduct(int catalogId)
+        {
+            Models.Product deletedProduct = new Models.Product();
+            deletedProduct = dtbs.Product.Find(catalogId);
+            dtbs.Product.Remove(deletedProduct);
+            dtbs.SaveChanges();
+            return RedirectToAction("Catalog");
+        }
+
+        [HttpPost]
+        public IActionResult EditingProduct(int id, string newProductName, int newProductPrice, string newProductDescription, string newProductPhoto, string newProductTotalCategory, string newProductSubCategory)
+        {
+            if (LoginController.IsAdmin)
+            {
+                if (ModelState.IsValid)
+                {
+                    Models.Product editedProduct = new Models.Product();
+                    editedProduct = dtbs.Product.Find(id);
+                    editedProduct.product_name = newProductName;
+                    editedProduct.product_price = newProductPrice;
+                    editedProduct.product_description = newProductDescription;
+                    editedProduct.product_photo = newProductPhoto;
+                    editedProduct.total_category = newProductTotalCategory;
+                    editedProduct.sub_category = newProductSubCategory;
+                    dtbs.Product.Update(editedProduct);
+                    dtbs.SaveChanges();
+                    return RedirectToAction("Catalog", "Catalog");
+                }
+                
+            }
+            return View();
         }
 
     }
