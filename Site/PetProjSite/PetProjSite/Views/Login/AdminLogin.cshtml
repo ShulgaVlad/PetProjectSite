@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="form-floating">
-                    <input asp-for="Password" type="password" class="form-control" autocomplete="current-password" aria-required="true" />
+                    <input asp-for="Password" id="password" type="password" class="form-control" autocomplete="current-password" aria-required="true" />
                     <label asp-for="Password" class="form-label">Password</label>
                     <img class="custom-button-ico button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
                     <span asp-validation-for="Password" class="text-danger"></span>
@@ -30,6 +30,23 @@
         </div>
     </section>
 </main>
+
+<script>
+    let eyeicon = document.getElementById("eyeicon");
+    let password = document.getElementById("password");
+    eyeicon.onclick = function () {
+        if (password.type == "password") {
+            password.type = "text";
+            eyeicon.src = "/images/password_show.png"
+        }
+        else {
+            password.type = "password";
+            eyeicon.src = "/images/password_hide.png"
+        }
+    }
+
+</script>
+
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
