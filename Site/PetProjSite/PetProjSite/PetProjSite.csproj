@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Views\Profile\catalog.css" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\css\catalog.css" />
     <None Include="wwwroot\css\Layout - Копировать.css" />
     <None Include="wwwroot\css\Layout.css" />

@@ -11,6 +11,11 @@ namespace PetProjSite.Controllers
             this.dtbs = dtbs;
         }
 
+        public IActionResult Profile()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult AddingToHistory(int productId)
         {

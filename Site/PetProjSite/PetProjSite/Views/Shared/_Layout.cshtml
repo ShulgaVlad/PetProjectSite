@@ -45,27 +45,25 @@
                    </button>
                </div>
                -->
-
-            
-
             <div class="top-butons">
-
-                <button class="custom-button-ico button-seting">
-                    <img src="~/images/history.png" alt="Your Image">
-                </button>
-
-                <button class="custom-button-ico button-seting">
-                    <img src="~/images/heart.png" alt="Your Image">
-                </button>
-
                 @{
                     if (LoginController.IsAuthorisated)
                     {
+                        
 
+                            <button class="custom-button-ico button-seting">
+                                <img src="~/images/history.png" alt="Your Image">
+                            </button>
+
+                            <button class="custom-button-ico button-seting">
+                                <img src="~/images/heart.png" alt="Your Image">
+                            </button>
+                        
                         <a class="button_text button_login_sign-up" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
                         <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
                             <button type="submit" class="button_text  btn">Log out</button>
                         </form>
+
 
                     }
                     else if (LoginController.IsAdmin)
