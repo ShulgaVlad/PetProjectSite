@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets\\images\\facebook.png"
     },
     {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\heart.png",
+      "PackagePath": "staticwebassets\\images\\heart.png"
+    },
+    {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\history.png",
+      "PackagePath": "staticwebassets\\images\\history.png"
+    },
+    {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\home.png",
       "PackagePath": "staticwebassets\\images\\home.png"
     },
