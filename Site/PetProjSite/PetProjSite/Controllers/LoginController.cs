@@ -37,7 +37,7 @@ namespace PetProjSite.Controllers
             {
                 // Користувач знайдений, перенаправляємо його на головну сторінку
                 IsAuthorisated = true;
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Home", "Home");
             }
             else
             {
@@ -56,7 +56,7 @@ namespace PetProjSite.Controllers
             {
                 // Користувач знайдений, перенаправляємо його на головну сторінку
                 IsAdmin = true;
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Home", "Home");
             }
             else
             {
