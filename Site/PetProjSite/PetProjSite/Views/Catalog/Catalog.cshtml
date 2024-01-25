@@ -15,15 +15,20 @@
             <div class="box-container-of-things">
                 @foreach (var product in Model)
                 {
+                    
                     <div class=container-of-things>
                         <img src="@product.product_photo">
                         <div class="container-of-things-text">
                             @product.product_description
                         </div>
                         <div class="button-box">
-                            <button class="button_text button-things">
-                                Переглянути
-                            </button>
+                            <form class="rowname7" asp-action="AddingToHistory" asp-controller="Profile" method="post">
+                                <input type="hidden" name="productId" value="@product.id" />
+                                <button class="button_text button-things" type="submit">
+                                    Переглянути
+                                </button>
+                            </form>
+                            
                             @if (LoginController.IsAdmin)
                             {
                                 <form class="rowname7" asp-action="GetProductId" asp-controller="Catalog" method="post">

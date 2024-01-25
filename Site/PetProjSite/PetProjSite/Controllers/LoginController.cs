@@ -11,6 +11,7 @@ namespace PetProjSite.Controllers
 
         public static bool IsAdmin = false;
         public static bool IsAuthorisated = false;
+        public static UserProfile LoggedUser;
 
         public LoginController(DataDbContext dtbs)
         {
@@ -37,7 +38,8 @@ namespace PetProjSite.Controllers
             {
                 // Користувач знайдений, перенаправляємо його на головну сторінку
                 IsAuthorisated = true;
-                return RedirectToAction("Home", "Home");
+                LoggedUser = user;
+                return RedirectToAction("Index", "Home");
             }
             else
             {
@@ -56,7 +58,7 @@ namespace PetProjSite.Controllers
             {
                 // Користувач знайдений, перенаправляємо його на головну сторінку
                 IsAdmin = true;
-                return RedirectToAction("Home", "Home");
+                return RedirectToAction("Index", "Home");
             }
             else
             {
@@ -68,7 +70,8 @@ namespace PetProjSite.Controllers
         [HttpPost]
 		public IActionResult Logout()
 		{
-			IsAuthorisated = false;
+            LoggedUser = null;
+            IsAuthorisated = false;
             IsAdmin = false;
             return RedirectToAction("Index", "Home");			
 		}
