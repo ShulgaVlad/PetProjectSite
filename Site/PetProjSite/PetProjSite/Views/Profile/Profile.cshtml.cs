@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace PetProjSite.Views.Catalog
+namespace PetProjSite.Views.Profile
 {
-    public class CatalogModel : PageModel
+    public class ProfileModel : PageModel
     {
         public void OnGet()
         {
