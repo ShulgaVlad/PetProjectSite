@@ -1,7 +1,7 @@
 
 
 
-.box-container-of-things {
+.ContainerProducts {
     justify-content: center;
     display: flex;
     max-width: 80%;
@@ -10,17 +10,22 @@
 }
 
 
-.container-of-things {
+.ContainerProducts__block {
     text-align: center;
     width: 430px;
     height: 500px;
     margin: 20px 20px 0px 20px;
 }
 
-    .container-of-things img {
+    .ContainerProducts__block img {
         width: 430px;
         height: 430px;
     }
+
+.ContainerProducts__block-text {
+    font-size: 20px;
+    padding: 5px;
+}
 
 button-things {
     display: block;
@@ -28,15 +33,10 @@ button-things {
     vertical-align: middle;
 }
 
-.button-box {
+.ContainerProducts__BoxButton {
     height: 30px;
     display: flex;
     justify-content: center;
     position: relative;
     align-items: center;
-}
-
-.container-of-things-text {
-    font-size: 20px;
-    padding: 5px;
 }

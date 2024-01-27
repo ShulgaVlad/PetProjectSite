@@ -1,4 +1,12 @@
 ﻿@model UserProfile
+
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- загальна бібліотека
+<<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" /> -->
+
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
 <link rel="stylesheet" type="text/css" href="~/css/Login.css">
 
@@ -34,7 +42,7 @@
                     <input asp-for="password" type="password" class="form-control" autocomplete="new-password" aria-required="true" />
                     <label asp-for="password">Password</label>
                     <span asp-validation-for="password" class="text-danger"></span>
-                    <img class="custom-button-ico button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
+                    <img class="Button button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
                 </div>
                 <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
 

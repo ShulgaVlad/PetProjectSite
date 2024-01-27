@@ -2,22 +2,3 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-
-
-// Отримайте посилання на кнопки та цільові елементи
-var buttonPortfolio = document.getElementById('frame_portfolio');
-var buttonContacts = document.getElementById('frame_contacts');
-var portfolioElement = document.getElementById('portfolio');
-var contactsElement = document.getElementById('contacts');
-var footerElement = document.querySelector('footer');
-
-// Додайте обробник подій для натискання на кнопки
-buttonPortfolio.addEventListener('click', function () {
-    // Викликайте метод scrollIntoView() для прокрутки до цільового елемента
-    portfolioElement.scrollIntoView({ behavior: 'smooth' });
-});
-
-buttonContacts.addEventListener('click', function () {
-    // Викликайте метод scrollIntoView() для прокрутки до цільового елемента
-    footerElement.scrollIntoView({ behavior: 'smooth' });
-});

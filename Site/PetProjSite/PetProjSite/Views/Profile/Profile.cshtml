@@ -1,1 +1,68 @@
-﻿
+﻿@using PetProjSite.Controllers;
+
+@{
+    string numOfLetters = "";
+    for (int i = 0; i < LoginController.LoggedUser.password.Length; i++)
+    {
+        numOfLetters += "*";
+    }
+}
+
+<!-- загальна бібліотека
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+<!-- загальна бібліотека
+<<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" /> -->
+
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" type="text/css" href="~/css/Layout.css">
+    <link rel="stylesheet" type="text/css" href="~/css/Profile.css">
+<body>
+    <main>
+        <section>
+            <div class="bio-bg">
+                <h2 style="text-align:center; padding-top:20px;"><strong>Особистий кабінет</strong></h2>
+
+                <h3 style="margin:20px 0 0 50px">Особисті дані</h3>
+
+                <div class="profile__table">
+
+                    <ol>
+                        <li>
+                            <h5>Прізвище</h5>
+
+                            <h4>@LoginController.LoggedUser.surname</h4>
+                        </li>
+                        <li>
+                            <h5>Ім'я</h5>
+                            <h4>@LoginController.LoggedUser.first_name</h4>
+                        </li>
+                        <li>
+                            <h5>Email</h5>
+                            <h4>@LoginController.LoggedUser.e_mail</h4>
+                        </li>
+                        <li>
+                            <h5>Телефон</h5>
+                            <h4>@LoginController.LoggedUser.phone_number</h4>
+                        </li>
+                    </ol>
+                </div>
+                <h3 style="margin:20px 0 0 50px">Зміна паролю</h3>
+                <ol style="list-style: none; padding:10px 30px 50px 30px;">
+                    <li style="padding: 30px; border: 1px solid #ccc; border-radius: 8px;">
+                        <h5>
+                            password
+                        </h5>
+                        <h4>@numOfLetters</h4>
+                        <button class="Button button_text button_password" href="">
+                            <img class="" src="~/images/edit-text.png" width="15px" height="15px" style="margin:0 10px 0 0" />
+                            <h6 style="margin:0;">Редагувати</h6>
+                        </button>
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+    </main>
+
+</body>

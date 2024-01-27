@@ -1,41 +1,32 @@
-﻿<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <!-- <link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />  -->
+﻿<!-- загальна бібліотека
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+<!-- загальна бібліотека
+<<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" /> -->
 
-    <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
-    <link rel="stylesheet" type="text/css" href="~/css/Home.css">
 
-    <title>HomePage</title>
-</head>
+<link rel="stylesheet" type="text/css" href="~/css/Home.css">
 
-<body>
 
-    <header>
-    </header>
 
-    <main>
+        
+        <section class="Main">
+            <h2 style="display:inline-block; margin:0 0 0 50px;"><strong>Дизайнер</strong></h2>
+            
+            <div class="Main__contact">
 
-        <section class="menu">
-
-            <h2 style="margin: 0 500px 0 320px;"><strong>Дизайнер</strong></h2>
-            <div class="box-contact">
-
-                <button id="frame_portfolio" class="frame_portfolio my_services">
+                <button id="Main__button_portfolio" class="Main__contact-button Main__contact-button_portfolio">
                     <span class="text-portfolio">Портфоліо</span>
                 </button>
 
-                <button id="frame_contacts" class="frame_contacts my_services">
-                    <span class="text_contacts">Контакти</span>
+                <button id="Main__button_contacts" class="Main__contact-button Main__contact-button_contacts">
+                    <span class="text__contacts">Контакти</span>
                 </button>
 
-                <div class="frame_number">
-                    <span class="text_number">+38(068)999 99-99</span>
+                <div class="Main__contact-button Main__button_number">
+                    <span class="text__number">+38(068)999 99-99</span>
                 </div>
 
-                <button class="button_text">
+                <button class="Button">
                     Замовити дзвінок
                 </button>
 
@@ -43,48 +34,48 @@
 
         </section>
 
-        <section class="screen">
+        <section class="Screen">
 
             <img src="~/images/img-1.png" alt="Your Image">
 
-            <div class="screen-text-container">
+            <div class="screen__container">
 
-                <p class="kotlyar_maya_designer_of_underwear">
+                <h1>
                     <strong>
                         Котляр Майя<br>
                         Дизайнер спідньої білизни
                     </strong>
-                </p>
+                </h1>
 
-                <p class="modern_and_stylish_underwear_for_every_taste">
+                <h4>
                     <strong>
                         Сучасна та стильна білизна на<br>
                         будь який смак
                     </strong>
-                </p>
-
+                </h4>
+                <div class="screen__buttons">
+                    <button class="Button button_about_me">Про мене</button>
+                    <button class="Button button_catalog">Каталог товарів</button>
+                </div>
             </div>
 
-            <div class="screen-buttons-container">
-                <button class="button_text button_about_me" href=""><span class="text-about_me">Про мене</span></button>
-                <button class="button_text button_catalog" style="" href=""><span class="text-catalog">Каталог товарів</span></button>
-            </div>
+            
 
         </section>
 
         <section class="bio">
 
-            <div class="bio-bg">
-                <div class="bio-about-me">
+                <div class="bio__about-me">
 
-                    <div class="bio-about-me-img-grup">
+                    <div class="bio__about-me-group-img">
                         <img src="~/images/portrait.png" alt="Your Image">
-                        <div class="bio-about-me-img-bg"></div>
-                        <div class="bio-about-me-img-line"></div>
+                        <div class="bio__about-me-img-bg"></div>
+                        <div class="bio__about-me-img-line"></div>
                     </div>
 
-                    <div class="bio-about-me-text">
-                        <p style="font-size:42px"><strong>Про  мене</strong></p>
+
+                    <div class="bio__about-me-text">
+                        <h2 style="font-size:42px"><strong>Про  мене</strong></h2>
                         <p style="font-size:24px">Text</p>
                         <p style="font-size:24px">Text</p>
                         <p style="font-size:24px">Text</p>
@@ -94,13 +85,13 @@
                     </div>
 
                 </div>
-                <div class="bio-about-me">
+                <div class="bio__about-me">
                     <div class="bio-about-me-text" style="display:inline-block; margin:0 auto;">
-                        <p style="font-size:42px">
+                        <h2 style="font-size:42px">
                             <strong>
                                 Як я працюю <br>з клієнтами
                             </strong>
-                        </p>
+                        </h2>
                         <p style="font-size:24px">Text</p>
                         <p style="font-size:24px">Text</p>
                         <p style="font-size:24px">Text</p>
@@ -109,31 +100,27 @@
                         <p style="font-size:24px">Text</p>
                     </div>
                 </div>
-            </div>
 
         </section>
 
         <section id="portfolio" class="portfolio">
-            
-            <div class="portfolio-bg">
-                <p style="font-size:42px">
+
+                <h2 style="font-size:42px; text-align:center">
                     <strong>
                         Портфоліо
                     </strong>
-                </p>
-                <div class="portfolio-imgs">
-                <img src="~/images/portfolio-img-1.png" alt="Your Image">
-                <img src="~/images/portfolio-img-2.png" alt="Your Image">
-                <img src="~/images/portfolio-img-3.png" alt="Your Image">
-                <img src="~/images/portfolio-img-4.png" alt="Your Image">
-                <img src="~/images/portfolio-img-5.png" alt="Your Image">
-                <img src="~/images/portfolio-img-6.png" alt="Your Image">
-                <img src="~/images/portfolio-img-7.png" alt="Your Image">
-                <img src="~/images/portfolio-img-8.png" alt="Your Image">
+                </h2>
+                <div class="portfolio__imgs">
+                    <img src="~/images/portfolio-img-1.png" alt="Your Image">
+                    <img src="~/images/portfolio-img-2.png" alt="Your Image">
+                    <img src="~/images/portfolio-img-3.png" alt="Your Image">
+                    <img src="~/images/portfolio-img-4.png" alt="Your Image">
+                    <img src="~/images/portfolio-img-5.png" alt="Your Image">
+                    <img src="~/images/portfolio-img-6.png" alt="Your Image">
+                    <img src="~/images/portfolio-img-7.png" alt="Your Image">
+                    <img src="~/images/portfolio-img-8.png" alt="Your Image">
                 </div>
-            </div>
         </section>
-    </main>
 
     <!-- <footer class="border-top footer text-muted">
         <div class="container">
@@ -142,6 +129,6 @@
     </footer>  -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-</body>
-</html>
+
+    <script src="~/js/Home.js"></script>
+    <script src="~/js/site.js"></script>

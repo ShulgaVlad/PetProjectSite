@@ -1,34 +1,31 @@
 ﻿@using PetProjSite.Controllers;
+<!-- загальна бібліотека
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+<!-- загальна бібліотека
+<<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" /> -->
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="~/css/Login.css">
 
-    <!--<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />-->
-    <!-- <link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />  -->
-    <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
-    <link rel="stylesheet" type="text/css" href="~/css/catalog.css">
-</head>
 <body>
     <main>
         <section>
-            <div class="box-container-of-things">
+            <div class="ContainerProducts">
                 @foreach (var product in Model)
                 {
-                    
-                    <div class=container-of-things>
+
+                    <div class=ContainerProducts__block>
                         <img src="@product.product_photo">
-                        <div class="container-of-things-text">
+                        <div class="ContainerProducts__block-text">
                             @product.product_description
                         </div>
-                        <div class="button-box">
+                        <div class="ContainerProducts__BoxButton">
                             <form class="rowname7" asp-action="AddingToHistory" asp-controller="Profile" method="post">
                                 <input type="hidden" name="productId" value="@product.id" />
-                                <button class="button_text button-things" type="submit">
+                                <button class="Button ContainerProducts__BoxButton-button" type="submit">
                                     Переглянути
                                 </button>
                             </form>
-                            
+
                             @if (LoginController.IsAdmin)
                             {
                                 <form class="rowname7" asp-action="GetProductId" asp-controller="Catalog" method="post">

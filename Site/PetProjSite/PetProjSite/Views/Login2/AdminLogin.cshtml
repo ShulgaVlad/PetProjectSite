@@ -1,5 +1,11 @@
 ﻿@model AdminProfile
 
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- загальна бібліотека
+<<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" /> -->
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" type="text/css" href="~/css/Layout.css">
 <link rel="stylesheet" type="text/css" href="~/css/Login.css">
 
 <main>
@@ -22,7 +28,7 @@
                 <div class="form-floating">
                     <input asp-for="Password" id="password" type="password" class="form-control" autocomplete="current-password" aria-required="true" />
                     <label asp-for="Password" class="form-label">Password</label>
-                    <img class="custom-button-ico button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
+                    <img class="Button button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
                 <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>

@@ -9,10 +9,16 @@
     font-weight: bold;
 }
 
-.button-eyeicon{
-    position:absolute;
-    right:10px;
-    top:14px;
+.button-eyeicon {
+    background-color: #00000000;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    min-height: 30px;
+    min-width: 30px;
+    padding: 0px;
+    right: 10px;
+    top: 14px;
     opacity: 50%;
 }
 
@@ -20,6 +26,10 @@
     margin-bottom:20px;
 }
 
-.button_login{
-    font-size:12px;
+.button_login {
+    padding: 0px;
+    min-height: 10px;
+    min-width: 10px;
+    height: 20px;
+    font-size: 12px;
 }

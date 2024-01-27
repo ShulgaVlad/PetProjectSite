@@ -1,57 +1,33 @@
-body {
-    font-family: Roboto, Consolas;
-    min-height: 100vh;
-}
-
-main {
-    min-height: calc(100vh - var(--footer-height, 0px) - 70px);
-}
-
-a {
-    text-decoration: none;
-    font-family: Roboto, Consolas, Arial;
-    font-weight: bold;
-    color: black;
-    font-size: 24px;
-}
-
-    a:hover {
-    }
-/* верхнє меню */
-.top {
-    box-shadow: 0px 7px 17.5px rgba(0, 0, 0, 0.25);
-    background-color: rgba(255, 255, 255, 1);
+.main-content {
     display: flex;
-    width: 100%;
-    height: 70px;
-    padding: 20px 0 20px 0;
 }
 
-/* всі елементи верхнього меню */
-.top-element {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 30px;
-}
+
 
 /* блок кнопки home та my_services */
-.home_my_services {
-    position: absolute;
+.MainMenu {
     display: flex;
-    height: 30px;
-    margin-left: 5%;
+    position: absolute;
+    height: 42px;
+    align-items: center;
 }
 
+.MainMenu_left {
+    left: 450px;
+}
+
+.MainMenu_right {
+    right: 450px;
+}
 /*кнопка home*/
-.button_home {
-    width: 30px;
-    height: 30px;
+.MainMenu__button-home {
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
 /* вертикальна лінія*/
-.line_1 {
+.MainMenu__line-1 {
     margin: 0 0 0 20px;
     width: 0px;
     height: 28px;
@@ -77,60 +53,19 @@ a {
     top: 0px;
 }
 
-.top-butons {
-    position: absolute;
-    right: 5%;
-    display: flex;
-}
-
-/* Спільні стилі для всіх кнопок */
-.custom-button-ico {
-    width: 30px;
-    display: inline-block;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(255, 255, 255, 0.00);
-    overflow: hidden;
-    border: none;
-    cursor: pointer;
-}
-
-.button-seting {
+.MainMenu__button-home {
     margin:0 10px 0 5px;
 }
 
-.custom-button-ico img {
-    width: 30px;
-    height: 30px;
+.MainMenu__a-img, .MainMenu__Button-img, .footer__Button-img {
+    width: 100%;
     object-fit: cover;
     display: block;
 }
 
 
 
-.button_text {
-    background-color: #ffa5d4;
-    padding: 2px 6px;
-    margin: 0;
-    font-size: 24px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    cursor: pointer;
-    border: none;
-    font-weight: bold;
-    color: black;
-}
 
-    .button_text:hover {
-        background-color: #ff4ca9;
-        /* Ваш бажаний колір для наведення */
-    }
-
-    .button_text:active {
-        background-color: #ae2f73;
-        /* Ваш бажаний колір для натискання */
-    }
 
 .button_login_sign-up {
     margin-right: 10px;
@@ -160,7 +95,7 @@ a {
 
 
 
-.bottom-butons {
+.footer_butons {
     position: absolute;
     bottom: 20px;
     left: 50px;
@@ -187,8 +122,7 @@ footer {
     position: relative;
 }
 
-.Call-me {
-    padding: 100px;
+.footer__Call-Me {
     width: 450px;
     height: 380px;
     background-color: white;

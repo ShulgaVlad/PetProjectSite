@@ -4,98 +4,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"] - PetProjSite</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- загальна бібліотека
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+    <!-- загальна бібліотека
+    <<link rel="stylesheet" href="~/PetProjSite.styles.css" /> -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link rel="stylesheet" href="~/css/site.css">
     <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
-    <!-- <link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" />  -->
 </head>
 <body>
     <header>
-        <div class="top">
-            <!-- топ меню -->
 
-            <div class="home_my_services">
+        <!-- топ меню -->
 
-                <a class="custom-button-ico button_home" asp-controller="Home" asp-action="Home">
-                    <img src="~/images/home.png" alt="Your Image">
-                </a>
+        <div class="MainMenu MainMenu_left">
 
-                <div class="line_1"></div>
-                <a class="my_services" src="">
-                    Мої послуги
-                </a>
-                <div class="line_1"></div>
-                <a class="my_services" asp-controller="Catalog" asp-action="Catalog">
-                    Каталог товарів
-                </a>
-            </div>
-            <!--
+            <a class="Button button_img" asp-controller="Home" asp-action="Home">
+                <img class="MainMenu__a-img" src="~/images/home.png" alt="Your Image">
+            </a>
 
-            <div class="top-elements_2">
-                   <button class="custom-button-ico button-top-1">
-                       <img src="~/images/ico-1.png" alt="Your Image">
-                   </button>
-                   <button class="custom-button-ico button-top-2">
-                       <img src="~/images/ico-2.png" alt="Your Image">
-                   </button>
-                   <button class="custom-button-ico button-top-3">
-                       <img src="~/images/ico-3.png" alt="Your Image">
-                   </button>
-               </div>
-               -->
-            <div class="top-butons">
-                @{
-                    if (LoginController.IsAuthorisated)
-                    {
-                        
+            <div class="MainMenu__line-1"></div>
+            <a class="my_services">
+                Мої послуги
+            </a>
+            <div class="MainMenu__line-1"></div>
+            <a class="my_services" asp-controller="Catalog" asp-action="Catalog">
+                Каталог товарів
+            </a>
+        </div>
+        <!--
 
-                            <button class="custom-button-ico button-seting">
-                                <img src="~/images/history.png" alt="Your Image">
-                            </button>
-
-                            <button class="custom-button-ico button-seting">
-                                <img src="~/images/heart.png" alt="Your Image">
-                            </button>
-                        
-                        <a class="button_text button_login_sign-up" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
-                        <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
-                            <button type="submit" class="button_text  btn">Log out</button>
-                        </form>
+        <div class="top-elements_2">
+               <button class="Button button-top-1">
+                   <img src="~/images/ico-1.png" alt="Your Image">
+               </button>
+               <button class="Button button-top-2">
+                   <img src="~/images/ico-2.png" alt="Your Image">
+               </button>
+               <button class="Button button-top-3">
+                   <img src="~/images/ico-3.png" alt="Your Image">
+               </button>
+           </div>
+           -->
+        <div class="MainMenu MainMenu_right">
+            @{
+                if (LoginController.IsAuthorisated)
+                {
 
 
-                    }
-                    else if (LoginController.IsAdmin)
-                    {
-                        <a class="button_text button_login_sign-up" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
-                        <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
-                            <button type="submit" class="button_text  btn">Log out</button>
-                        </form>
-                    }
-                    else
-                    {
-                        <a class="button_text button_login_sign-up" asp-controller="Login" asp-action="Login">
-                            Log in
-                        </a>
-                        <a class="button_text button_login_sign-up" asp-controller="Registration" asp-action="Registration">Sign up</a>
-                    }
-                    
-                    <button class="custom-button-ico button-seting">
-                        <img src="~/images/ico_settings.png" alt="Your Image">
+                    <button class="Button  button_img">
+                        <img src="~/images/history.png" alt="Your Image">
                     </button>
+
+                    <button class="Button  button_img">
+                        <img src="~/images/heart.png" alt="Your Image">
+                    </button>
+
+                    <a class="Button button_login_sign-up" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
+                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
+                        <button type="submit" class="Button  btn">Log out</button>
+                    </form>
+
+
                 }
-            </div>
+                else if (LoginController.IsAdmin)
+                {
+                    <a class="Button button_login_sign-up" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
+                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
+                        <button type="submit" class="Button  btn">Log out</button>
+                    </form>
+                }
+                else
+                {
+                    <a class="Button button_login_sign-up" asp-controller="Login" asp-action="Login">
+                        Log in
+                    </a>
+                    <a class="Button button_login_sign-up" asp-controller="Registration" asp-action="Registration">Sign up</a>
+                }
+
+                <button class="Button  button_img">
+                    <img class="MainMenu__Button-img" src="~/images/ico_settings.png" alt="Your Image">
+                </button>
+            }
         </div>
 
     </header>
+    <div class="main-content">
+        <aside></aside>
+        <main>
+            @RenderBody()
+        </main>
+        <aside>
+            <h3 style="text-align:center">Меню</h3>
+            @{
+                if (LoginController.IsAuthorisated)
+                {
+                    <button class="Button Button_aside">
+                        <img src="~/images/heart.png" alt="Your Image">
+                        Обране
+                    </button>
+                    <button class="Button Button_aside">
+                        <img src="~/images/history.png" alt="Your Image">
+                        Історія перегляду
+                    </button>
+                    <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
+                        <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
+                        Профіль
+                    </a>
+                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
+                        <button type="submit" class="Button Button_aside">
+                        <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
+                            Вийти
+                        </button>
+                    </form>
+                    <button class="Button Button_aside">
+                        Портфоліо
+                    </button>
+                    <button class="Button Button_aside">
+                        Портфоліо
+                    </button>
+                }
+                else if (LoginController.IsAdmin)
+                {
+                }
+                else
+                {
 
-    <main>
-        @RenderBody()
-    </main>
+                }
+            }
+        </aside>
+    </div>
 
-
-    <footer class="border-top footer text-muted">
+    <footer id="footer" class="border-top footer text-muted">
         <p style="font-size:82px; margin: 20px 0 0 80px; color:white">
             <strong>
                 Зв’язок
@@ -104,19 +149,19 @@
         <p style="font-size:24px; margin: 20px 0 0 80px; color:white">
             Привіт! З нетерпінням чекаю <br> можливості почати сумісну <br> працю з тобою!
         </p>
-        <div class="bottom-butons">
+        <div class="footer_butons">
 
-            <button class="custom-button-ico">
-                <img src="~/images/telegram1.png" alt="Your Image">
+            <button class="Button button_img">
+                <img class="footer__Button-img" src="~/images/telegram1.png" alt="Your Image">
             </button>
-            <button class="custom-button-ico">
-                <img src="~/images/instagram.png" alt="Your Image">
+            <button class="Button button_img">
+                <img class="footer__Button-img" src="~/images/instagram.png" alt="Your Image">
             </button>
-            <button class="custom-button-ico">
-                <img src="~/images/facebook.png" alt="Your Image">
+            <button class="Button button_img">
+                <img class="footer__Button-img" src="~/images/facebook.png" alt="Your Image">
             </button>
         </div>
-        <div class="Call-me">
+        <div class="footer__Call-Me">
             <h2>Подзвони мені</h2>
             <p>+38(068)999 99-99</p>
             <p>+38(068)999 99-99</p>
@@ -125,8 +170,10 @@
             <p></p>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
