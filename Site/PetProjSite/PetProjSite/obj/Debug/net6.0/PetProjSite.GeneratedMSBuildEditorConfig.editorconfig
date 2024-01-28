@@ -42,12 +42,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Login2/AdminLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW4yXEFkbWluTG9naW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Login2/LoginV1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW4yXExvZ2luVjEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Login/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWRtaW5Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Login/Login.cshtml]
@@ -60,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Registration/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXFJlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Registration/Registrationv1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXFJlZ2lzdHJhdGlvbnYxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Files/Vlad/Wab/PetProjectSite/Site/PetProjSite/PetProjSite/Views/Shared/Error.cshtml]

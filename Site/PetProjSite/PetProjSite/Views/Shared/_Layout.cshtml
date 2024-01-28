@@ -56,35 +56,14 @@
                 if (LoginController.IsAuthorisated)
                 {
 
-
-                    <button class="Button  button_img">
-                        <img src="~/images/history.png" alt="Your Image">
-                    </button>
-
-                    <button class="Button  button_img">
-                        <img src="~/images/heart.png" alt="Your Image">
-                    </button>
-
-                    <a class="Button button_login_sign-up" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
-                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
-                        <button type="submit" class="Button  btn">Log out</button>
-                    </form>
-
-
                 }
                 else if (LoginController.IsAdmin)
                 {
-                    <a class="Button button_login_sign-up" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
-                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
-                        <button type="submit" class="Button  btn">Log out</button>
-                    </form>
+                    
                 }
                 else
                 {
-                    <a class="Button button_login_sign-up" asp-controller="Login" asp-action="Login">
-                        Log in
-                    </a>
-                    <a class="Button button_login_sign-up" asp-controller="Registration" asp-action="Registration">Sign up</a>
+                    
                 }
 
                 <button class="Button  button_img">
@@ -122,31 +101,54 @@
                             Вийти
                         </button>
                     </form>
-                    <button class="Button Button_aside">
-                        Портфоліо
-                    </button>
-                    <button class="Button Button_aside">
-                        Портфоліо
-                    </button>
+                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up ">
+                        <button type="submit" class="Button  btn Button_aside">Log out</button>
+                    </form>
+                    
                 }
                 else if (LoginController.IsAdmin)
                 {
+                    <button class="Button Button_aside">
+                        <img src="~/images/heart.png" alt="Your Image">
+                        Обране
+                    </button>
+                    <button class="Button Button_aside">
+                        <img src="~/images/history.png" alt="Your Image">
+                        Історія перегляду
+                    </button>
+                    <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
+                        <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
+                        Профіль
+                    </a>
+                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
+                        <button type="submit" class="Button Button_aside">
+                            <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
+                            Вийти
+                        </button>
+                    </form>
+                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up ">
+                        <button type="submit" class="Button  btn Button_aside">Log out</button>
+                    </form>
+                    <a class="Button  Button_aside" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
                 }
                 else
                 {
-
+                    <a class="Button Button_aside" asp-controller="Login" asp-action="Login">
+                        Log in
+                    </a>
+                    <a class="Button Button_aside" asp-controller="Registration" asp-action="Registration">Sign up</a>
                 }
             }
         </aside>
     </div>
 
     <footer id="footer" class="border-top footer text-muted">
-        <p style="font-size:82px; margin: 20px 0 0 80px; color:white">
+        <p style="font-size:82px; padding: 20px 0 0 80px; margin:0; color:white">
             <strong>
                 Зв’язок
             </strong>
         </p>
-        <p style="font-size:24px; margin: 20px 0 0 80px; color:white">
+        <p style="font-size:24px; padding: 20px 0 0 80px; margin:0; color:white">
             Привіт! З нетерпінням чекаю <br> можливості почати сумісну <br> працю з тобою!
         </p>
         <div class="footer_butons">

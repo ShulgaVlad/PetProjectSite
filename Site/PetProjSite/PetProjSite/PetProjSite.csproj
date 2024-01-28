@@ -14,7 +14,7 @@
     <None Include="Views\Login\Login.cshtml" />
     <None Include="wwwroot\css\catalog.css" />
     <None Include="wwwroot\css\Layout.css" />
-    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\css\Login-Singup.css" />
     <None Include="wwwroot\js\index.js" />
   </ItemGroup>
 
@@ -25,11 +25,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Login\css\" />
-    <Folder Include="Views\Login\js\" />
   </ItemGroup>
 
 </Project>

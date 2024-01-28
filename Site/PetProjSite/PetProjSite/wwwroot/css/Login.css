@@ -10,6 +10,7 @@
 }
 
 .button-eyeicon {
+    position:absolute;
     background-color: #00000000;
     position: absolute;
     height: 15px;
@@ -18,11 +19,12 @@
     min-width: 30px;
     padding: 0px;
     right: 10px;
-    top: 14px;
+    top: 30px;
     opacity: 50%;
 }
 
 .form-floating{
+    position:relative;
     margin-bottom:20px;
 }
 
@@ -32,4 +34,12 @@
     min-width: 10px;
     height: 20px;
     font-size: 12px;
+}
+
+
+.text-danger {
+    color: #ff5050;
+    margin: 0 0 0 10px; 
+    opacity:1;
+    font-size:12px;
 }

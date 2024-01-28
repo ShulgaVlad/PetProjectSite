@@ -1,96 +1,80 @@
+@model UserProfile
+
 <!-- Посилання на зовнішній таблиці стилів -->
-<link rel="stylesheet" href="~/css/style.css">
+<link rel="stylesheet" href="~/css/Login-Singup.css">
+<link rel="stylesheet" href="~/css/Login.css">
 
 <!-- Посилання на Google Fonts для шрифту Open Sans -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-<div class="container">
+<section style="display:flex; align-items:center; justify-content:center; height:100%">
     <div class="frame">
         <div class="nav">
+
             <!-- Навігаційні посилання для увіходу та реєстрації -->
             <ul class"links">
-                <li class="signin-active"><a class="btn">Увійти</a></li>
-                <li class="signup-inactive"><a class="btn">Зареєструватися</a></li>
+                <li class="signin-active"><a class="btn" href="/Login/Login">Увійти</a></li>
+                <li class="signup-inactive"><a class="btn" href="/Registration/Registration">Зареєструватися</a></li>
             </ul>
         </div>
 
         <!-- Ініціалізація AngularJS -->
         <div ng-app ng-init="checked = false">
             <!-- Форма входу -->
-            <form class="form-signin" action="" method="post" name="form">
+            <form class="form-signin" id="account" method="post">
                 <!-- Введення ім'я користувача -->
-                <label for="username">Ім'я користувача</label>
-                <input class="form-styling" type="text" name="username" placeholder="" />
+                <label asp-for="e_mail">Ім'я користувача</label>
+                <input asp-for="e_mail" class="form-styling" />
+                <span asp-validation-for="e_mail" class="text-danger"></span>
                 <!-- Введення пароля -->
-                <label for="password">Пароль</label>
-                <input class="form-styling" type="text" name="password" placeholder="" />
+                <div class="form-floating">
+                <label asp-for="password" for="password">Пароль</label>
+                    <input asp-for="password" type="password" class="form-styling form-control" autocomplete="current-password" aria-required="true" id="password" />
+                    <img class="Button button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
+                <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+               
                 <!-- Прапорець "Запам'ятати мене" -->
                 <input type="checkbox" id="checkbox" />
                 <label for="checkbox"><span class="ui"></span>Запам'ятати мене</label>
                 <!-- Кнопка входу -->
-                <div class="btn-animate">
-                    <a class="btn-signin">Увійти</a>
+                <div id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary btn-animate">
+                    <button class="btn-signin">Увійти</button>
                 </div>
             </form>
-
-            <!-- Форма реєстрації -->
-            <form class="form-signup" action="" method="post" name="form">
-                <!-- Введення повного імені -->
-                <label for="fullname">Повне ім'я</label>
-                <input class="form-styling" type="text" name="fullname" placeholder="" />
-                <!-- Введення електронної пошти -->
-                <label for="email">Електронна пошта</label>
-                <input class="form-styling" type="text" name="email" placeholder="" />
-                <!-- Введення пароля -->
-                <label for="password">Пароль</label>
-                <input class="form-styling" type="text" name="password" placeholder="" />
-                <!-- Підтвердження пароля -->
-                <label for="confirmpassword">Підтвердження пароля</label>
-                <input class="form-styling" type="text" name="confirmpassword" placeholder="" />
-                <!-- Кнопка реєстрації з AngularJS подією -->
-                <a ng-click="checked = !checked" class="btn-signup">Зареєструватися</a>
-            </form>
-
-            <!-- Розділ для повідомлення про успішну реєстрацію -->
-            <div class="success">
-                <!-- SVG іконка галочки -->
-                <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked' : ''">
-                    <path fill="#ffffff" d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314 c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042 c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
-                </svg>
-                <!-- Текст успішного повідомлення -->
-                <div class="successtext">
-                    <p>Дякуємо за реєстрацію! Перевірте свою електронну пошту для підтвердження.</p>
-                </div>
-            </div>
         </div>
-
         <!-- Посилання на відновлення паролю -->
-
-                    <div class="forgot">
+        <div class="forgot">
             <a href="#">Забули пароль?</a>
         </div>
 
-        <!-- Розділ для відображення обкладинки та фотографії профілю -->
-        <div>
-            <div class="cover-photo"></div>
-            <div class="profile-photo"></div>
-            <!-- Вітальний заголовок -->
-            <h1 class="welcome">Ласкаво просимо, Chris</h1>
-            <!-- Кнопка "Повернутися назад" -->
-            <a class="btn-goback" value="Оновити" onClick="history.go()">Повернутися назад</a>
-        </div>
     </div>
 
     <!-- Посилання для оновлення сторінки -->
     <a id="refresh" value="Оновити" onClick="history.go()">
         <!-- Зображення кнопки оновлення -->
-        <img src="~/images/reload.png" class="refreshicon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 322.447 322.447" style="enable-background:new 0 0 322.447 322.447;" xml:space="preserve">
+        <img src="~/images/reload.png" class="refreshicon" width="25px" height="25px">
     </a>
-</div>
 
-<!-- Підключення бібліотек jQuery та AngularJS -->
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
 
-<!-- Підключення скрипту для індексу -->
-<script src="~/js/index.js"></script>
+</section>
+<script>
+    let eyeicon = document.getElementById("eyeicon");
+    let password = document.getElementById("password");
+    eyeicon.onclick = function () {
+        if (password.type == "password") {
+            password.type = "text";
+            eyeicon.src = "/images/password_show.png"
+        }
+        else {
+            password.type = "password";
+            eyeicon.src = "/images/password_hide.png"
+        }
+    }
+
+</script>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
