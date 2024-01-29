@@ -29,7 +29,10 @@ namespace PetProjSite.Controllers
 			    dtbs.SaveChanges();
 
 			    UserProfile newReader = dtbs.UserProfile.FirstOrDefault(p => p.e_mail == user.e_mail);
-                return RedirectToAction("Index", "Home");
+                LoginController.IsAuthorisated = true;
+                LoginController.LoggedUser = newReader;
+
+                return RedirectToAction("Catalog", "Catalog");
 		    }
 		    else
             {

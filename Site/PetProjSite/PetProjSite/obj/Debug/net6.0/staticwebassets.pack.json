@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PetProjSite.bundle.scp.css",
-      "PackagePath": "staticwebassets\\PetProjSite.bundle.scp.css"
-    },
-    {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Home.css",
       "PackagePath": "staticwebassets\\css\\Home.css"
     },
@@ -17,8 +13,8 @@
       "PackagePath": "staticwebassets\\css\\Login-Singup.css"
     },
     {
-      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-v2.css",
-      "PackagePath": "staticwebassets\\css\\Login-v2.css"
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-stile-integrated.css",
+      "PackagePath": "staticwebassets\\css\\Login-stile-integrated.css"
     },
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login.css",

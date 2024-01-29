@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PetProjSite.Data;
+using PetProjSite.Models;
 
 namespace PetProjSite.Controllers
 {
@@ -58,5 +59,23 @@ namespace PetProjSite.Controllers
             return RedirectToAction("Home", "Home");
         }
 
+        [HttpPost]
+        public IActionResult History()
+        {
+            if (LoginController.LoggedUser != null)
+            {
+                var productsinhistory = dtbs.Order.Where(p => p.UserProfile.id == LoginController.LoggedUser.id).ToList();
+                var productlist = dtbs.Product.ToList();
+                productsinhistory.Reverse();
+
+                var hisdata = new ProductAndCatalog
+                {
+                    cataloghistory = productsinhistory,
+                    productshistory = productlist
+                };
+                return View(hisdata);
+            }
+            return RedirectToAction("Profile");
+        }
     }
 }

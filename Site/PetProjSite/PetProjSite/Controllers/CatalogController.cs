@@ -68,6 +68,8 @@ namespace PetProjSite.Controllers
         [HttpPost]
         public IActionResult DeleteProduct(int catalogId)
         {
+            var history = dtbs.Order.Where(p => p.Product.id == catalogId);
+            dtbs.Order.RemoveRange(history);
             Models.Product deletedProduct = new Models.Product();
             deletedProduct = dtbs.Product.Find(catalogId);
             dtbs.Product.Remove(deletedProduct);

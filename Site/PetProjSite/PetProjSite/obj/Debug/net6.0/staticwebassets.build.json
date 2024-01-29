@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yjioDDl2cZ65nuC+4EyFPnDE0KbMkC1rbn5cyyoJZTc=",
+  "Hash": "xwSE8k/jJ5+eaHuVJ9p0T8ReriKD3oKH0YZ8jQxofdk=",
   "Source": "PetProjSite",
   "BasePath": "_content/PetProjSite",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\obj\\Debug\\net6.0\\scopedcss\\bundle\\PetProjSite.styles.css",
-      "SourceId": "PetProjSite",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/PetProjSite",
-      "RelativePath": "PetProjSite.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\obj\\Debug\\net6.0\\scopedcss\\bundle\\PetProjSite.styles.css"
-    },
-    {
-      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PetProjSite.bundle.scp.css",
-      "SourceId": "PetProjSite",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/PetProjSite",
-      "RelativePath": "PetProjSite.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PetProjSite.bundle.scp.css"
-    },
     {
       "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Home.css",
       "SourceId": "PetProjSite",
@@ -131,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\css\\Login-Singup.css"
     },
     {
-      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-v2.css",
+      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-stile-integrated.css",
       "SourceId": "PetProjSite",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\",
       "BasePath": "_content/PetProjSite",
-      "RelativePath": "css/Login-v2.css",
+      "RelativePath": "css/Login-stile-integrated.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,7 +109,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Login-v2.css"
+      "OriginalItemSpec": "wwwroot\\css\\Login-stile-integrated.css"
     },
     {
       "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Profile.css",

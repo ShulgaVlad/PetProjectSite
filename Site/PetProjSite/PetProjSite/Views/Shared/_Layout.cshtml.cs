@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace PetProjSite.Views.Login
+namespace PetProjSite.Views.Shared
 {
-    public class LoginModel : PageModel
+    public class _LayoutModel : PageModel
     {
         public void OnGet()
         {

@@ -1,42 +1,59 @@
+:root {
+    --background-gradient-from: #ffa5d416;
+    --background-gradient-to: #ff46a73f;
+}
 
 
-
-.ContainerProducts {
+.Products {
     justify-content: center;
     display: flex;
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
 
-.ContainerProducts__block {
+.Products__block {
+    background: linear-gradient(var(--background-gradient-from), var(--background-gradient-to)), no-repeat center center;
     text-align: center;
-    width: 430px;
-    height: 500px;
-    margin: 20px 20px 0px 20px;
+    width: 220px;
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-    .ContainerProducts__block img {
-        width: 430px;
-        height: 430px;
+.Products__img {
+    display: flex;
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .Products__img img {
+        max-height: 220px;
+        max-width: 100%;
+        height: auto;
     }
 
-.ContainerProducts__block-text {
+.Products__text {
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-button-things {
-    display: block;
-    position: absolute;
-    vertical-align: middle;
-}
 
-.ContainerProducts__BoxButton {
+.Products__BoxButton {
     height: 30px;
     display: flex;
     justify-content: center;
     position: relative;
     align-items: center;
+}
+
+button-things {
+    margin-right: 10px;
 }

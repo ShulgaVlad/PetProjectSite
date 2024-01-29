@@ -6,37 +6,39 @@
 
 <link rel="stylesheet" type="text/css" href="~/css/catalog.css">
 
-        <section>
-            <div class="ContainerProducts">
-                @foreach (var product in Model)
-                {
+<section>
+    <div class="Products">
+        @foreach (var product in Model)
+        {
 
-                    <div class=ContainerProducts__block>
-                        <img src="@product.product_photo">
-                        <div class="ContainerProducts__block-text">
-                            @product.product_description
-                        </div>
-                        <div class="ContainerProducts__BoxButton">
-                            <form class="rowname7" asp-action="AddingToHistory" asp-controller="Profile" method="post">
-                                <input type="hidden" name="productId" value="@product.id" />
-                                <button class="Button ContainerProducts__BoxButton-button" type="submit">
-                                    Переглянути
-                                </button>
-                            </form>
+            <div class=Products__block>
+                <div class="Products__img">
+                    <img src="@product.product_photo">
+                </div>
+                <div class="Products__text">
+                    @product.product_description
+                </div>
+                <div class="Products__BoxButton">
+                    <form class="" asp-action="AddingToHistory" asp-controller="Profile" method="post">
+                        <input type="hidden" name="productId" value="@product.id" />
+                        <button class="Button button-things" type="submit">
+                            Переглянути
+                        </button>
+                    </form>
 
-                            @if (LoginController.IsAdmin)
-                            {
-                                <form class="rowname7" asp-action="GetProductId" asp-controller="Catalog" method="post">
-                                    <input type="hidden" name="catalogId" value="@product.id" />
-                                    <input type="submit" class="btn btn-primary edit-button" data-id="@product.id" value="Edit" />
-                                </form>
-                                <form class="rowname7" asp-action="DeleteProduct" asp-controller="Catalog" method="post">
-                                    <input type="hidden" name="catalogId" value="@product.id" />
-                                    <input type="submit" class="btn btn-primary edit-button" data-id="@product.id" value="Delete" />
-                                </form>
-                            }
-                        </div>
-                    </div>
-                }
+                    @if (LoginController.IsAdmin)
+                    {
+                        <form class="" asp-action="GetProductId" asp-controller="Catalog" method="post">
+                            <input type="hidden" name="catalogId" value="@product.id" />
+                            <input type="submit" class="btn btn-primary edit-button" data-id="@product.id" value="Edit" />
+                        </form>
+                        <form class="" asp-action="DeleteProduct" asp-controller="Catalog" method="post">
+                            <input type="hidden" name="catalogId" value="@product.id" />
+                            <input type="submit" class="" data-id="@product.id" value="Delete" />
+                        </form>
+                    }
+                </div>
             </div>
-        </section>
+        }
+    </div>
+</section>
