@@ -25,4 +25,10 @@
     margin: 20px 50px;
 }
 
-Profile-bg
+.Products {
+    justify-content: center;
+    display: flex;
+    max-width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}

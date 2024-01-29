@@ -7,33 +7,32 @@
 
 <link rel="stylesheet" type="text/css" href="~/css/Login.css">
 
-<body>
-    <main>
-        <section>
-            <div class="ContainerProducts">
-                @foreach (var product in Model.cataloghistory)
-                {
-                    var prodexist = Model.productshistory.FirstOrDefault(d => d.id == product.Product.id);
-                    if(prodexist != null)
-                    {
-                        <div class=ContainerProducts__block>
-                            <img src="@product.Product.product_photo">
-                            <div class="ContainerProducts__block-text">
-                                @product.Product.product_description
-                            </div>
-                            <div class="ContainerProducts__BoxButton">
-                                <form class="rowname7" asp-action="AddingToHistory" asp-controller="Profile" method="post">
-                                    <input type="hidden" name="productId" value="@product.Product.id" />
-                                    <button class="Button ContainerProducts__BoxButton-button" type="submit">
-                                        Переглянути
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    }                    
-                }
-            </div>
-        </section>
-    </main>
 
-</body>
+
+<section>
+    <div class="Products">
+        @foreach (var product in Model.cataloghistory)
+        {
+            var prodexist = Model.productshistory.FirstOrDefault(d => d.id == product.Product.id);
+            if (prodexist != null)
+            {
+                <div class=Products__block>
+                    <div class="Products__img">
+                        <img src="@product.Product.product_photo">
+                    </div>
+                    <div class="Products__text">
+                        @product.Product.product_description
+                    </div>
+                    <div class="Products__BoxButton">
+                        <form class="" asp-action="AddingToHistory" asp-controller="Profile" method="post">
+                            <input type="hidden" name="productId" value="@product.Product.id" />
+                            <button class="Button button-things" type="submit">
+                                Переглянути
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</section>

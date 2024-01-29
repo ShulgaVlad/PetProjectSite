@@ -90,10 +90,13 @@
                         <img src="~/images/heart.png" alt="Your Image">
                         Обране
                     </button>
-                    <button class="Button Button_aside">
-                        <img src="~/images/history.png" alt="Your Image">
-                        Історія перегляду
-                    </button>
+                    <form asp-controller="Profile" asp-action="History">
+                        <button class="Button Button_aside">
+                            <img src="~/images/history.png" alt="Your Image">
+                            Історія перегляду
+                        </button>
+                    </form>
+
                     <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
                         <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
                         Профіль

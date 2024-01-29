@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --background-gradient-from: #ffa5d416;
     --background-gradient-to: #ff46a73f;
 }
@@ -48,12 +48,12 @@
 
 .Products__BoxButton {
     height: 30px;
-    display: flex;
     justify-content: center;
     position: relative;
     align-items: center;
 }
 
-button-things {
-    margin-right: 10px;
+Products__buttons-admin {
+    font-size: 13px;
+    height:10px;
 }

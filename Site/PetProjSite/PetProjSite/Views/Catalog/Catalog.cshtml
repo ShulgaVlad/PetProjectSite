@@ -30,11 +30,11 @@
                     {
                         <form class="" asp-action="GetProductId" asp-controller="Catalog" method="post">
                             <input type="hidden" name="catalogId" value="@product.id" />
-                            <input type="submit" class="btn btn-primary edit-button" data-id="@product.id" value="Edit" />
+                            <button class="Button Products__buttons-admin">Edit</button>
                         </form>
                         <form class="" asp-action="DeleteProduct" asp-controller="Catalog" method="post">
                             <input type="hidden" name="catalogId" value="@product.id" />
-                            <input type="submit" class="" data-id="@product.id" value="Delete" />
+                            <button class="Products__buttons-admin Button ">Delete</button>
                         </form>
                     }
                 </div>
