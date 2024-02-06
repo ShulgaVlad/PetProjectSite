@@ -1,59 +1,61 @@
 ﻿:root {
-    --background-gradient-from: #ffa5d416;
-    --background-gradient-to: #ff46a73f;
+	--background-gradient-from: #ffa5d416;
+	--background-gradient-to: #ff46a73f;
 }
 
 
 .Products {
-    justify-content: center;
-    display: flex;
-    max-width: 95%;
-    margin: 0 auto;
-    flex-wrap: wrap;
+	padding: 100px;
+	justify-content: center;
+	display: flex;
+	max-width: 95%;
+	margin: 0 auto;
+	flex-wrap: wrap;
 }
 
 
 .Products__block {
-    background: linear-gradient(var(--background-gradient-from), var(--background-gradient-to)), no-repeat center center;
-    text-align: center;
-    width: 220px;
-    height: 350px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
+	background: linear-gradient(var(--background-gradient-from), var(--background-gradient-to)), no-repeat center center;
+	text-align: center;
+	width: 220px;
+	height: 350px;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 8px;
 }
 
 .Products__img {
-    display: flex;
-    width: 220px;
-    height: 220px;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+	display: flex;
+	width: 220px;
+	height: 220px;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
-    .Products__img img {
-        max-height: 220px;
-        max-width: 100%;
-        height: auto;
-    }
+	.Products__img img {
+		max-height: 220px;
+		max-width: 100%;
+		height: auto;
+	}
 
 .Products__text {
-    font-size: 20px;
-    padding: 10px;
-    margin-bottom: 10px;
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 10px;
 }
 
 
 .Products__BoxButton {
-    height: 30px;
-    justify-content: center;
-    position: relative;
-    align-items: center;
+	height: 30px;
+	justify-content: center;
+	position: relative;
+	align-items: center;
 }
 
-Products__buttons-admin {
-    font-size: 13px;
-    height:10px;
+.Products__buttons-admin {
+	font-size: 14px;
+	min-height: 10px;
+	height: 20px;
 }

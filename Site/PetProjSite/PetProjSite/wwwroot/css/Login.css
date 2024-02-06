@@ -1,39 +1,35 @@
-.login-box{
-    width:30%;
-    margin:auto;
-    padding-top:300px;
+.Login {
+   min-height: calc(100vh - var(--footer-height, 0px) - 60px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%
 }
 
-.login-text, .register-text {
-    text-align: center;
-    font-weight: bold;
+.login-submit{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   height:50px;
 }
 
 .button-eyeicon {
-    position:absolute;
-    background-color: #00000000;
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    min-height: 30px;
-    min-width: 30px;
-    padding: 0px;
-    right: 10px;
-    top: 30px;
-    opacity: 50%;
+   position: absolute;
+   background-color: #00000000;
+   position: absolute;
+   height: 15px;
+   width: 15px;
+   min-height: 30px;
+   min-width: 30px;
+   padding: 0px;
+   right: 10px;
+   top: 30px;
+   opacity: 50%;
 }
 
 .form-floating{
     position:relative;
     margin-bottom:20px;
-}
-
-.button_login {
-    padding: 0px;
-    min-height: 10px;
-    min-width: 10px;
-    height: 20px;
-    font-size: 12px;
 }
 
 
@@ -42,4 +38,14 @@
     margin: 0 0 0 10px; 
     opacity:1;
     font-size:12px;
+}
+
+.Products__buttons-admin{
+   margin: 10px 0 10px 0;
+   font-size:12px;
+   height:20px;
+}
+
+.login-text{
+   text-align:center;
 }

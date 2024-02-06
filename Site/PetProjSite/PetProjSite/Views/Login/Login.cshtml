@@ -7,11 +7,11 @@
 <!-- Посилання на Google Fonts для шрифту Open Sans -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-<section style="display:flex; align-items:center; justify-content:center; height:100%">
+<section class="Login" style="">
     <div class="frame">
         <div class="nav">
 
-            <!-- Навігаційні посилання для увіходу та реєстрації -->
+            <!-- Навігаційні посилання для входу та реєстрації -->
             <ul class"links">
                 <li class="signin-active"><a class="btn" href="/Login/Login">Увійти</a></li>
                 <li class="signup-inactive"><a class="btn" href="/Registration/Registration">Зареєструватися</a></li>
@@ -28,19 +28,22 @@
                 <span asp-validation-for="e_mail" class="text-danger"></span>
                 <!-- Введення пароля -->
                 <div class="form-floating">
-                <label asp-for="password" for="password">Пароль</label>
+                    <label asp-for="password" for="password">Пароль</label>
                     <input asp-for="password" type="password" class="form-styling form-control" autocomplete="current-password" aria-required="true" id="password" />
                     <img class="Button button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
-                <span asp-validation-for="password" class="text-danger"></span>
+                    <span asp-validation-for="password" class="text-danger"></span>
                 </div>
-               
+
                 <!-- Прапорець "Запам'ятати мене" -->
                 <input type="checkbox" id="checkbox" />
                 <label for="checkbox"><span class="ui"></span>Запам'ятати мене</label>
                 <!-- Кнопка входу -->
-                <div id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary btn-animate">
+                <div id="login-submit" type="submit" class="login-submit">
                     <button class="btn-signin">Увійти</button>
                 </div>
+
+                <a class="Button Products__buttons-admin" href="~/Login/AdminLogin">admin</a>
+
             </form>
         </div>
         <!-- Посилання на відновлення паролю -->

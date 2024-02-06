@@ -1,12 +1,20 @@
 {
   "Files": [
     {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Catalog.css",
+      "PackagePath": "staticwebassets\\css\\Catalog.css"
+    },
+    {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Home.css",
       "PackagePath": "staticwebassets\\css\\Home.css"
     },
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Layout.css",
       "PackagePath": "staticwebassets\\css\\Layout.css"
+    },
+    {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-Admin.css",
+      "PackagePath": "staticwebassets\\css\\Login-Admin.css"
     },
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-Singup.css",
@@ -25,8 +33,16 @@
       "PackagePath": "staticwebassets\\css\\Profile.css"
     },
     {
-      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Registration.css",
+      "PackagePath": "staticwebassets\\css\\Registration.css"
+    },
+    {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Site\\site-buttons.css",
+      "PackagePath": "staticwebassets\\css\\Site\\site-buttons.css"
+    },
+    {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Site\\site.css",
+      "PackagePath": "staticwebassets\\css\\Site\\site.css"
     },
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\favicon.ico",
@@ -39,6 +55,10 @@
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\avatar.png",
       "PackagePath": "staticwebassets\\images\\avatar.png"
+    },
+    {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\images\\bg.jpg"
     },
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\checkmark.png",
@@ -91,6 +111,10 @@
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\logout.png",
       "PackagePath": "staticwebassets\\images\\logout.png"
+    },
+    {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\menu.png",
+      "PackagePath": "staticwebassets\\images\\menu.png"
     },
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\images\\password_hide.png",

@@ -1,0 +1,46 @@
+.login-box{
+    width:30%;
+    margin:auto;
+    padding-top:300px;
+}
+
+.login-text, .register-text {
+    text-align: center;
+    font-weight: bold;
+    color:black;
+}
+
+.button-eyeicon {
+    position:absolute;
+    background-color: #00000000;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    min-height: 30px;
+    min-width: 30px;
+    padding: 0px;
+    right: 10px;
+    top: 30px;
+    opacity: 50%;
+}
+
+.form-floating{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.button_login {
+    padding: 0px;
+    min-height: 10px;
+    min-width: 10px;
+    height: 20px;
+    font-size: 12px;
+}
+
+
+.text-danger {
+    color: #ff5050;
+    margin: 0 0 0 10px; 
+    opacity:1;
+    font-size:12px;
+}

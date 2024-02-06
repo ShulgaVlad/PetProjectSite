@@ -1,34 +1,36 @@
 ﻿@using PetProjSite.Controllers;
 @using PetProjSite.Models;
 @using PetProjSite.Data;
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"] - PetProjSite</title>
 
+    <!--<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />-->
     <!-- загальна бібліотека
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
-    <!-- загальна бібліотека
-    <<link rel="stylesheet" href="~/PetProjSite.styles.css" /> -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <link rel="stylesheet" href="~/css/site.css">
+    <<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" /> -->
+    <!--   -->
+    <link rel="stylesheet" href="~/css/Site/site.css">
+    <link rel="stylesheet" href="~/css/Site/site-buttons.css">
     <link rel="stylesheet" type="text/css" href="~/css/Layout.css">
 
-    <link rel="stylesheet" type="text/css" href="~/css/catalog.css">
-
 </head>
-<body>
-    <header>
 
-        <!-- топ меню -->
+<body>
+
+    <!-- топ меню -->
+    <header>
 
         <div class="MainMenu MainMenu_left">
 
-            <a class="Button button_img" asp-controller="Home" asp-action="Home">
-                <img class="MainMenu__a-img" src="~/images/home.png" alt="Your Image">
+            <a class="Button Button_ico" asp-controller="Home" asp-action="Home">
+                <img class="" src="~/images/home.png" alt="Your Image">
             </a>
 
             <div class="MainMenu__line-1"></div>
@@ -40,20 +42,7 @@
                 Каталог товарів
             </a>
         </div>
-        <!--
 
-        <div class="top-elements_2">
-               <button class="Button button-top-1">
-                   <img src="~/images/ico-1.png" alt="Your Image">
-               </button>
-               <button class="Button button-top-2">
-                   <img src="~/images/ico-2.png" alt="Your Image">
-               </button>
-               <button class="Button button-top-3">
-                   <img src="~/images/ico-3.png" alt="Your Image">
-               </button>
-           </div>
-           -->
         <div class="MainMenu MainMenu_right">
             @{
                 if (LoginController.IsAuthorisated)
@@ -69,101 +58,107 @@
 
                 }
 
-                <button class="Button  button_img">
-                    <img class="MainMenu__Button-img" src="~/images/ico_settings.png" alt="Your Image">
+                <button id="toggleButton" class="Button Button_ico">
+                    <img class="" src="~/images/menu.png" alt="Your Image">
                 </button>
             }
         </div>
 
     </header>
-    <div class="main-content">
-        <aside></aside>
-        <main>
-            @RenderBody()
-        </main>
-        <aside>
-            <h3 style="text-align:center">Меню</h3>
-            @{
-                if (LoginController.IsAuthorisated)
-                {
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <aside id="menu">
+        <h3 style="text-align:center">Меню</h3>
+        @{
+            if (LoginController.IsAuthorisated)
+            {
+                <button class="Button Button_aside">
+                    <img src="~/images/heart.png" alt="Your Image">
+                    Обране
+                </button>
+                <form asp-controller="Profile" asp-action="History">
                     <button class="Button Button_aside">
-                        <img src="~/images/heart.png" alt="Your Image">
-                        Обране
+                        <img src="~/images/history.png" alt="Your Image">
+                        Історія перегляду
                     </button>
-                    <form asp-controller="Profile" asp-action="History">
-                        <button class="Button Button_aside">
-                            <img src="~/images/history.png" alt="Your Image">
-                            Історія перегляду
-                        </button>
-                    </form>
+                </form>
 
-                    <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
-                        <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
-                        Профіль
-                    </a>
-                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
-                        <button type="submit" class="Button Button_aside">
-                            <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
-                            Вийти
-                        </button>
-                    </form>
-
-
-                }
-                else if (LoginController.IsAdmin)
-                {
-                    <button class="Button Button_aside">
-                        <img src="~/images/heart.png" alt="Your Image">
-                        Обране
+                <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
+                    <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
+                    Профіль
+                </a>
+                <form asp-action="Logout" asp-controller="Login" class="">
+                    <button type="submit" class="Button Button_aside">
+                        <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
+                        Вийти
                     </button>
-                    <form asp-controller="Profile" asp-action="History">
-                        <button class="Button Button_aside">
-                            <img src="~/images/history.png" alt="Your Image">
-                            Історія перегляду
-                        </button>
-                    </form>
-                    <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
-                        <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
-                        Профіль
-                    </a>
-                    <form asp-action="Logout" asp-controller="Login" class="button_login_sign-up">
-                        <button type="submit" class="Button Button_aside">
-                            <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
-                            Вийти
-                        </button>
-                    </form>
-                    <a class="Button  Button_aside" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
-                }
-                else
-                {
-                    <a class="Button Button_aside" asp-controller="Login" asp-action="Login">
-                        Log in
-                    </a>
-                    <a class="Button Button_aside" asp-controller="Registration" asp-action="Registration">Sign up</a>
-                }
+                </form>
+
+
             }
-        </aside>
-    </div>
+            else if (LoginController.IsAdmin)
+            {
+                <button class="Button Button_aside">
+                    <img src="~/images/heart.png" alt="Your Image">
+                    Обране
+                </button>
+                <form asp-controller="Profile" asp-action="History">
+                    <button class="Button Button_aside">
+                        <img src="~/images/history.png" alt="Your Image">
+                        Історія перегляду
+                    </button>
+                </form>
+                <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
+                    <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
+                    Профіль
+                </a>
+                <form asp-action="Logout" asp-controller="Login" class="">
+                    <button type="submit" class="Button Button_aside">
+                        <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
+                        Вийти
+                    </button>
+                </form>
+                <a class="Button  Button_aside" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
+            }
+            else
+            {
+                <a class="Button Button_aside" asp-controller="Login" asp-action="Login">
+                    Log in
+                </a>
+                <a class="Button Button_aside" asp-controller="Registration" asp-action="Registration">Sign up</a>
+            }
+        }
+    </aside>
 
-    <footer id="footer" class="border-top footer text-muted">
-        <p style="font-size:82px; padding: 20px 0 0 80px; margin:0; color:white">
-            <strong>
-                Зв’язок
-            </strong>
-        </p>
-        <p style="font-size:24px; padding: 20px 0 0 80px; margin:0; color:white">
-            Привіт! З нетерпінням чекаю <br> можливості почати сумісну <br> працю з тобою!
-        </p>
+    <footer id="footer" class="">
+
+        <div style="padding: 20px 0 0 80px; color:white">
+
+            <h1>
+                <strong>
+                    Зв’язок
+                </strong>
+            </h1>
+
+            <p style="font-size:24px;">
+                Привіт! З нетерпінням чекаю <br> можливості почати сумісну <br> працю з тобою!
+            </p>
+
+        </div>
+
         <div class="footer_butons">
 
-            <button class="Button button_img">
-                <img class="footer__Button-img" src="~/images/telegram1.png" alt="Your Image">
+            <button class="Button Button_ico">
+                <img class="" src="~/images/telegram1.png" alt="Your Image">
             </button>
-            <button class="Button button_img">
-                <img class="footer__Button-img" src="~/images/instagram.png" alt="Your Image">
+            <button class="Button Button_ico">
+                <img class="" src="~/images/instagram.png" alt="Your Image">
             </button>
-            <button class="Button button_img">
-                <img class="footer__Button-img" src="~/images/facebook.png" alt="Your Image">
+            <button class="Button Button_ico">
+                <img class="" src="~/images/facebook.png" alt="Your Image">
             </button>
         </div>
         <div class="footer__Call-Me">
@@ -171,8 +166,8 @@
             <p>+38(068)999 99-99</p>
             <p>+38(068)999 99-99</p>
             <h2>Години роботи</h2>
-            <p></p>
-            <p></p>
+            <p>Пн/Пт 10:00 | 20:00</p>
+            <p>Сб/Нд 12:00 | 18:00</p>
         </div>
     </footer>
 

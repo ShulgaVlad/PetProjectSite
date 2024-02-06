@@ -1,18 +1,10 @@
 ﻿@model UserProfile
 
-
-
-<!-- загальна бібліотека
-<<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" /> -->
-
-
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/css/style.css">
 <link rel="stylesheet" type="text/css" href="~/css/Login-Singup.css">
 <link rel="stylesheet" type="text/css" href="~/css/Login.css">
 
 
-<section style="display:flex; align-items:center; justify-content:center; height:100%">
+<section class="Login">
     <div class="frame">
         <div class="nav">
             <!-- Навігаційні посилання для увіходу та реєстрації -->
@@ -55,9 +47,10 @@
                 </div>
                 <div class="form-floating">
                     <label asp-for="password">Password</label>
-                    <input asp-for="password" type="password" class="form-control  form-styling" autocomplete="new-password" aria-required="true" />
-                    <span asp-validation-for="password" class="text-danger"></span>
+                    <input asp-for="password" type="password" class="form-styling  form-styling" autocomplete="new-password" aria-required="true" />
                     <img class="Button button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                    
                 </div>
                 <!-- Прапорець "Запам'ятати мене" -->
                 <input type="checkbox" id="checkbox" />

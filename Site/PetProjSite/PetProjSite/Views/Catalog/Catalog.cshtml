@@ -21,20 +21,20 @@
                 <div class="Products__BoxButton">
                     <form class="" asp-action="AddingToHistory" asp-controller="Profile" method="post">
                         <input type="hidden" name="productId" value="@product.id" />
-                        <button class="Button button-things" type="submit">
+                        <button class="Button" type="submit">
                             Переглянути
                         </button>
                     </form>
 
                     @if (LoginController.IsAdmin)
                     {
-                        <form class="" asp-action="GetProductId" asp-controller="Catalog" method="post">
+                        <form class="Products__buttons-admin" asp-action="GetProductId" asp-controller="Catalog" method="post">
                             <input type="hidden" name="catalogId" value="@product.id" />
                             <button class="Button Products__buttons-admin">Edit</button>
                         </form>
-                        <form class="" asp-action="DeleteProduct" asp-controller="Catalog" method="post">
+                        <form class="Products__buttons-admin" asp-action="DeleteProduct" asp-controller="Catalog" method="post">
                             <input type="hidden" name="catalogId" value="@product.id" />
-                            <button class="Products__buttons-admin Button ">Delete</button>
+                            <button class=" Button Products__buttons-admin">Delete</button>
                         </form>
                     }
                 </div>

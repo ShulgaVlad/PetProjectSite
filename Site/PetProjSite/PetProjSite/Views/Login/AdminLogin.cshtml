@@ -1,41 +1,57 @@
 ﻿@model AdminProfile
 
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<!-- загальна бібліотека
-<<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" /> -->
+
 
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" type="text/css" href="~/css/Layout.css">
+<link rel="stylesheet" type="text/css" href="~/css/Login-Singup.css">
 <link rel="stylesheet" type="text/css" href="~/css/Login.css">
 
-<main>
-    <section>
-        <div class="login-box">
 
-            <h1 class="login-text">Admin log in</h1>
 
-            <hr />
+<section class="Login">
+    <div class="frame">
+        <h2 class="login-text">Admin log in</h2>
 
-            <form id="account" method="post">
-
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <!-- Ініціалізація AngularJS -->
+        <div ng-app ng-init="checked = false">
+            <!-- Форма входу -->
+            <form class="form-signin" id="account" method="post">
+                <!-- Введення ім'я користувача -->
+                <label asp-for="Email">Ім'я користувача</label>
+                <input asp-for="Email" class="form-styling" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <!-- Введення пароля -->
                 <div class="form-floating">
-                    <input asp-for="Email" class="form-control" autocomplete="username" aria-required="true" />
-                    <label asp-for="Email" class="form-label">E-mail</label>
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
-
-                <div class="form-floating">
-                    <input asp-for="Password" id="password" type="password" class="form-control" autocomplete="current-password" aria-required="true" />
-                    <label asp-for="Password" class="form-label">Password</label>
+                    <label asp-for="Password" for="password">Пароль</label>
+                    <input asp-for="Password" type="password" class="form-styling form-control" autocomplete="current-password" aria-required="true" id="password" />
                     <img class="Button button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
-                <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+
+                <!-- Прапорець "Запам'ятати мене" -->
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox"><span class="ui"></span>Запам'ятати мене</label>
+                <!-- Кнопка входу -->
+                <div id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary btn-animate">
+                    <button class="btn-signin">Увійти</button>
+                </div>
             </form>
         </div>
-    </section>
-</main>
+        <!-- Посилання на відновлення паролю -->
+        <div class="forgot">
+            <a href="#">Забули пароль?</a>
+        </div>
+
+    </div>
+
+    <!-- Посилання для оновлення сторінки -->
+    <a id="refresh" value="Оновити" onClick="history.go()">
+        <!-- Зображення кнопки оновлення -->
+        <img src="~/images/reload.png" class="refreshicon" width="25px" height="25px">
+    </a>
+
+
+</section>
 
 <script>
     let eyeicon = document.getElementById("eyeicon");
