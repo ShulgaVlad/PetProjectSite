@@ -53,7 +53,10 @@
 	align-items: center;
 }
 
-.Products__buttons-admin {
+	.Products__BoxButton Button {
+		background-color: #faeee7;
+	}
+	.Products__buttons-admin {
 	font-size: 14px;
 	min-height: 10px;
 	height: 20px;

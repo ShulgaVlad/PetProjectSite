@@ -20,7 +20,7 @@ namespace PetProjSite.Controllers
         [HttpPost]
         public IActionResult AddingToHistory(int productId)
         {
-            if(LoginController.LoggedUser != null)
+            if (LoginController.LoggedUser != null)
             {
                 Models.UserProfile userHisId = new Models.UserProfile();
                 userHisId = dtbs.UserProfile.Find(LoginController.LoggedUser.id);
@@ -44,7 +44,7 @@ namespace PetProjSite.Controllers
 
                 if (ModelState.IsValid)
                 {
-                    
+
                     Models.Order productToHistory = new Models.Order()
                     {
                         Product = productHisId,

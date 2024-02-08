@@ -56,7 +56,7 @@ footer {
 	background-color: white;
 	position: absolute;
 	top: 20px;
-	right: 100px;
+	right: 320px;
 	border-radius: 8px;
 }
 
@@ -65,16 +65,21 @@ footer {
 	}
 
 #menu {
-	position: fixed;
-	top: 60px;
+	position: absolute;
 	right: -300px; /* «м≥нено на в≥дносну одиницю */
 	width: 300px;
 	height: 100%;
-	background-color: #f0f0f0;
 	transition: right 0.3s ease;
 	z-index: 1000;
 }
 
-	#menu.menu-open {
-		right: 0%;
-	}
+.menu {
+	position: sticky;
+	background-color: #C79F87;
+	transition: right 0.3s ease;
+	z-index: 1000;
+}
+
+#menu.menu-open {
+	right: 0%;
+}

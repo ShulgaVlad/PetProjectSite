@@ -1,32 +1,28 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Build.Tasks.Deployment.Bootstrapper;
-using Microsoft.EntityFrameworkCore;
 using PetProjSite.Data;
-using PetProjSite.Models;
-using System.Net;
 
 namespace PetProjSite.Controllers
 {
-	public class CatalogController : Controller
-	{
-		private DataDbContext dtbs;
+    public class CatalogController : Controller
+    {
+        private DataDbContext dtbs;
 
-		public CatalogController(DataDbContext dtbs)
-		{
-			this.dtbs = dtbs;
-		}
+        public CatalogController(DataDbContext dtbs)
+        {
+            this.dtbs = dtbs;
+        }
         public IActionResult Catalog()
-		{
+        {
             IEnumerable<Models.Product> products = dtbs.Product.ToList();
             return View(products);
-		}
+        }
 
-		public IActionResult AddingNewProduct()
-		{
-			return View();
-		}    
-        
-        public IActionResult EditingProduct() 
+        public IActionResult AddingNewProduct()
+        {
+            return View();
+        }
+
+        public IActionResult EditingProduct()
         {
             return View();
         }
@@ -58,9 +54,9 @@ namespace PetProjSite.Controllers
                         dtbs.SaveChanges();
                     }
                     return RedirectToAction("Catalog", "Catalog");
-                }                
+                }
             }
-            
+
             return RedirectToAction("Home", "Home");
 
         }
@@ -96,7 +92,7 @@ namespace PetProjSite.Controllers
                     dtbs.SaveChanges();
                     return RedirectToAction("Catalog", "Catalog");
                 }
-                
+
             }
             return View();
         }

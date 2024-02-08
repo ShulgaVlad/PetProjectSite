@@ -17,3 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        menu.classList.remove('menu-open');
+    }
+})
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        document.body.classList.add('no-focus-outline');
+    }
+});
+
+document.addEventListener('focusout', function () {
+    document.body.classList.remove('no-focus-outline');
+});

@@ -20,25 +20,25 @@ namespace PetProjSite.Controllers
         }
 
         [HttpPost]
-		public IActionResult Registration(UserProfile user)
-		{
-		    bool usExist = dtbs.UserProfile.Any(p => p.e_mail == user.e_mail);
-		    if (!usExist && new EmailAddressAttribute().IsValid(user.e_mail))
-		    {
-			    dtbs.UserProfile.Add(user);
-			    dtbs.SaveChanges();
+        public IActionResult Registration(UserProfile user)
+        {
+            bool usExist = dtbs.UserProfile.Any(p => p.e_mail == user.e_mail);
+            if (!usExist && new EmailAddressAttribute().IsValid(user.e_mail))
+            {
+                dtbs.UserProfile.Add(user);
+                dtbs.SaveChanges();
 
-			    UserProfile newReader = dtbs.UserProfile.FirstOrDefault(p => p.e_mail == user.e_mail);
+                UserProfile newReader = dtbs.UserProfile.FirstOrDefault(p => p.e_mail == user.e_mail);
                 LoginController.IsAuthorisated = true;
                 LoginController.LoggedUser = newReader;
 
                 return RedirectToAction("Catalog", "Catalog");
-		    }
-		    else
+            }
+            else
             {
                 return View();
             }
-		}
+        }
 
-	}
+    }
 }

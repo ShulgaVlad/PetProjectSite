@@ -13,7 +13,7 @@ namespace PetProjSite.Models
 
         public int? phone_number { get; set; }
 
-        [Required]       
+        [Required]
         public string first_name { get; set; }
 
         [Required]

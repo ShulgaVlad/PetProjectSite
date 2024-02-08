@@ -1,7 +1,6 @@
-﻿using PetProjSite.Data;
+﻿using Microsoft.AspNetCore.Mvc;
+using PetProjSite.Data;
 using PetProjSite.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 
 namespace PetProjSite.Controllers
 {
@@ -68,12 +67,12 @@ namespace PetProjSite.Controllers
         }
 
         [HttpPost]
-		public IActionResult Logout()
-		{
+        public IActionResult Logout()
+        {
             LoggedUser = null;
             IsAuthorisated = false;
             IsAdmin = false;
-            return RedirectToAction("Index", "Home");			
-		}
-	}
+            return RedirectToAction("Index", "Home");
+        }
+    }
 }

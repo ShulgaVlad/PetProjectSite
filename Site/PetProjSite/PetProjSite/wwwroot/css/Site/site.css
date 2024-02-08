@@ -5,6 +5,11 @@ body {
 	background-color: #faeee7;
 }
 
+	/* Заборона відображення обводки (фокусу) тільки при натисканні Escape */
+	body.no-focus-outline *:focus {
+		outline: none;
+	}
+
 html {
 	font-size: 14px;
 	position: relative;
@@ -64,5 +69,3 @@ header {
 	padding: 10px 0 10px 0;
 	z-index: 4;
 }
-
-

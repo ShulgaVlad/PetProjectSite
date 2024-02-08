@@ -71,66 +71,68 @@
     </main>
 
     <aside id="menu">
-        <h3 style="text-align:center">Меню</h3>
-        @{
-            if (LoginController.IsAuthorisated)
-            {
-                <button class="Button Button_aside">
-                    <img src="~/images/heart.png" alt="Your Image">
-                    Обране
-                </button>
-                <form asp-controller="Profile" asp-action="History">
+        <div class="menu" style="position: sticky; top:120px;">
+            <h3 style="text-align:center; margin-top:60px;">Меню</h3>
+            @{
+                if (LoginController.IsAuthorisated)
+                {
                     <button class="Button Button_aside">
-                        <img src="~/images/history.png" alt="Your Image">
-                        Історія перегляду
+                        <img src="~/images/heart.png" alt="Your Image">
+                        Обране
                     </button>
-                </form>
+                    <form asp-controller="Profile" asp-action="History">
+                        <button class="Button Button_aside">
+                            <img src="~/images/history.png" alt="Your Image">
+                            Історія перегляду
+                        </button>
+                    </form>
 
-                <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
-                    <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
-                    Профіль
-                </a>
-                <form asp-action="Logout" asp-controller="Login" class="">
-                    <button type="submit" class="Button Button_aside">
-                        <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
-                        Вийти
-                    </button>
-                </form>
+                    <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
+                        <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
+                        Профіль
+                    </a>
+                    <form asp-action="Logout" asp-controller="Login" class="">
+                        <button type="submit" class="Button Button_aside">
+                            <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
+                            Вийти
+                        </button>
+                    </form>
 
 
-            }
-            else if (LoginController.IsAdmin)
-            {
-                <button class="Button Button_aside">
-                    <img src="~/images/heart.png" alt="Your Image">
-                    Обране
-                </button>
-                <form asp-controller="Profile" asp-action="History">
+                }
+                else if (LoginController.IsAdmin)
+                {
                     <button class="Button Button_aside">
-                        <img src="~/images/history.png" alt="Your Image">
-                        Історія перегляду
+                        <img src="~/images/heart.png" alt="Your Image">
+                        Обране
                     </button>
-                </form>
-                <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
-                    <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
-                    Профіль
-                </a>
-                <form asp-action="Logout" asp-controller="Login" class="">
-                    <button type="submit" class="Button Button_aside">
-                        <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
-                        Вийти
-                    </button>
-                </form>
-                <a class="Button  Button_aside" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
+                    <form asp-controller="Profile" asp-action="History">
+                        <button class="Button Button_aside">
+                            <img src="~/images/history.png" alt="Your Image">
+                            Історія перегляду
+                        </button>
+                    </form>
+                    <a class="Button Button_aside" asp-area="" asp-controller="Profile" asp-action="Profile">
+                        <img src="~/images/profile (2).png" style="width:24px; height:24px; padding:3px;" alt="Your Image">
+                        Профіль
+                    </a>
+                    <form asp-action="Logout" asp-controller="Login" class="">
+                        <button type="submit" class="Button Button_aside">
+                            <img src="~/images/logout.png" style="width:24px; height:24px; padding:3px 0 3px 6px;" alt="Your Image">
+                            Вийти
+                        </button>
+                    </form>
+                    <a class="Button  Button_aside" asp-area="" asp-controller="Catalog" asp-action="AddingNewProduct">Add new product</a>
+                }
+                else
+                {
+                    <a class="Button Button_aside" asp-controller="Login" asp-action="Login">
+                        Log in
+                    </a>
+                    <a class="Button Button_aside" asp-controller="Registration" asp-action="Registration">Sign up</a>
+                }
             }
-            else
-            {
-                <a class="Button Button_aside" asp-controller="Login" asp-action="Login">
-                    Log in
-                </a>
-                <a class="Button Button_aside" asp-controller="Registration" asp-action="Registration">Sign up</a>
-            }
-        }
+        </div>
     </aside>
 
     <footer id="footer" class="">
