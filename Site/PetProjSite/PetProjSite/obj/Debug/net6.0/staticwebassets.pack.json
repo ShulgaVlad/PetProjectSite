@@ -13,20 +13,20 @@
       "PackagePath": "staticwebassets\\css\\Layout.css"
     },
     {
-      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-Admin.css",
-      "PackagePath": "staticwebassets\\css\\Login-Admin.css"
-    },
-    {
-      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-Singup.css",
-      "PackagePath": "staticwebassets\\css\\Login-Singup.css"
-    },
-    {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-stile-integrated.css",
       "PackagePath": "staticwebassets\\css\\Login-stile-integrated.css"
     },
     {
-      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login.css",
-      "PackagePath": "staticwebassets\\css\\Login.css"
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login\\Login-Admin.css",
+      "PackagePath": "staticwebassets\\css\\Login\\Login-Admin.css"
+    },
+    {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login\\Login.css"
+    },
+    {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login\\checkbox.css",
+      "PackagePath": "staticwebassets\\css\\Login\\checkbox.css"
     },
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Profile.css",
@@ -181,8 +181,8 @@
       "PackagePath": "staticwebassets\\js\\Home.js"
     },
     {
-      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\js\\Login.js",
-      "PackagePath": "staticwebassets\\js\\Login.js"
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\js\\Login\\Login.js",
+      "PackagePath": "staticwebassets\\js\\Login\\Login.js"
     },
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\js\\index.js",

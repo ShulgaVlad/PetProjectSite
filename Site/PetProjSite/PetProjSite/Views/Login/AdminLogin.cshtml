@@ -1,45 +1,40 @@
 ﻿@model AdminProfile
 
-
-
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" type="text/css" href="~/css/Login-Singup.css">
-<link rel="stylesheet" type="text/css" href="~/css/Login.css">
-
-
+<link rel="stylesheet" type="text/css" href="~/css/Login/checkbox.css">
+<link rel="stylesheet" type="text/css" href="~/css/Login/Login.css">
 
 <section class="Login">
-    <div class="frame">
+    <div class="Login__frame">
         <h2 class="login-text">Admin log in</h2>
 
-        <!-- Ініціалізація AngularJS -->
-        <div ng-app ng-init="checked = false">
-            <!-- Форма входу -->
-            <form class="form-signin" id="account" method="post">
-                <!-- Введення ім'я користувача -->
-                <label asp-for="Email">Ім'я користувача</label>
-                <input asp-for="Email" class="form-styling" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-                <!-- Введення пароля -->
-                <div class="form-floating">
-                    <label asp-for="Password" for="password">Пароль</label>
-                    <input asp-for="Password" type="password" class="form-styling form-control" autocomplete="current-password" aria-required="true" id="password" />
-                    <img class="Button button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
+        <!-- Форма входу -->
+        <form class="Login__form-signin" id="account" method="post">
 
-                <!-- Прапорець "Запам'ятати мене" -->
-                <input type="checkbox" id="checkbox" />
-                <label for="checkbox"><span class="ui"></span>Запам'ятати мене</label>
-                <!-- Кнопка входу -->
-                <div id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary btn-animate">
-                    <button class="btn-signin">Увійти</button>
-                </div>
-            </form>
-        </div>
+            <!-- Введення ім'я користувача -->
+            <label asp-for="Email">Ім'я користувача</label>
+            <input asp-for="Email" class="Login__input" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+
+            <!-- Введення пароля -->
+            <div class="Login__form-password">
+                <label asp-for="Password" for="password">Пароль</label>
+                <input asp-for="Password" type="password" class="Login__input" autocomplete="current-password" aria-required="true" id="password" />
+                <img class="Button button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <!-- Прапорець "Запам'ятати мене" -->
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"><span class="ui"></span>Запам'ятати мене</label>
+
+            <!-- Кнопка входу -->
+            <div id="Login__submit" type="submit" class="Login__submit">
+                <button class="Button Login__btn-signin">Увійти</button>
+            </div>
+        </form>
         <!-- Посилання на відновлення паролю -->
         <div class="forgot">
-            <a href="#">Забули пароль?</a>
+            <a class="forgot__btn" href="#">Забули пароль?</a>
         </div>
 
     </div>
@@ -50,25 +45,6 @@
         <img src="~/images/reload.png" class="refreshicon" width="25px" height="25px">
     </a>
 
-
 </section>
 
-<script>
-    let eyeicon = document.getElementById("eyeicon");
-    let password = document.getElementById("password");
-    eyeicon.onclick = function () {
-        if (password.type == "password") {
-            password.type = "text";
-            eyeicon.src = "/images/password_show.png"
-        }
-        else {
-            password.type = "password";
-            eyeicon.src = "/images/password_hide.png"
-        }
-    }
-
-</script>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+<script src="~/js/Login/Login.js" defer></script>

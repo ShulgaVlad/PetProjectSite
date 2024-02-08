@@ -9,7 +9,6 @@
   <ItemGroup>
     <None Include="Views\Login\Login.cshtml" />
     <None Include="wwwroot\css\Layout.css" />
-    <None Include="wwwroot\css\Login-Singup.css" />
     <None Include="wwwroot\js\index.js" />
   </ItemGroup>
 
@@ -23,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\css\Login\" />
     <Folder Include="wwwroot\css\Profile\" />
     <Folder Include="wwwroot\css\Registration\" />
     <Folder Include="wwwroot\css\Shared\" />

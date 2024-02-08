@@ -1,54 +1,54 @@
 @model UserProfile
 
 <!-- Посилання на зовнішній таблиці стилів -->
-<link rel="stylesheet" href="~/css/Login-Singup.css">
-<link rel="stylesheet" href="~/css/Login.css">
+<link rel="stylesheet" href="~/css/Login/checkbox.css">
+<link rel="stylesheet" href="~/css/Login/Login.css">
 
 <!-- Посилання на Google Fonts для шрифту Open Sans -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-<section class="Login" style="">
-    <div class="frame">
-        <div class="nav">
+<section class="Login">
+    <div class="Login__frame">
 
+        <div class="Login__nav">
             <!-- Навігаційні посилання для входу та реєстрації -->
-            <ul class"links">
-                <li class="signin-active"><a class="btn" href="/Login/Login">Увійти</a></li>
-                <li class="signup-inactive"><a class="btn" href="/Registration/Registration">Зареєструватися</a></li>
+            <ul>
+                <li class="Login__signin-active"><a href="/Login/Login">Увійти</a></li>
+                <li class="Login__signup-inactive"><a href="/Registration/Registration">Зареєструватися</a></li>
             </ul>
         </div>
 
-        <!-- Ініціалізація AngularJS -->
-        <div ng-app ng-init="checked = false">
             <!-- Форма входу -->
-            <form class="form-signin" id="account" method="post">
+        <form class="Login__form-signin" id="account" method="post">
+
                 <!-- Введення ім'я користувача -->
                 <label asp-for="e_mail">Ім'я користувача</label>
-                <input asp-for="e_mail" class="form-styling" />
+            <input asp-for="e_mail" class="Login__input" />
                 <span asp-validation-for="e_mail" class="text-danger"></span>
+
                 <!-- Введення пароля -->
-                <div class="form-floating">
+                <div class="Login__form-password">
                     <label asp-for="password" for="password">Пароль</label>
-                    <input asp-for="password" type="password" class="form-styling form-control" autocomplete="current-password" aria-required="true" id="password" />
-                    <img class="Button button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
+                    <input asp-for="password" type="password" class="Login__input" autocomplete="current-password" aria-required="true" id="password" />
+                    <img class="Button Button_ico button-eyeicon" src="~/images/password_hide.png" id="eyeicon" />
                     <span asp-validation-for="password" class="text-danger"></span>
                 </div>
 
                 <!-- Прапорець "Запам'ятати мене" -->
                 <input type="checkbox" id="checkbox" />
                 <label for="checkbox"><span class="ui"></span>Запам'ятати мене</label>
+
                 <!-- Кнопка входу -->
-                <div id="login-submit" type="submit" class="login-submit">
-                    <button class="btn-signin">Увійти</button>
+                <div id="Login__submit" type="submit" class="Login__submit">
+                <button class="Button Login__btn-signin">Увійти</button>
                 </div>
 
                 <a class="Button Products__buttons-admin" href="~/Login/AdminLogin">admin</a>
 
             </form>
-        </div>
         <!-- Посилання на відновлення паролю -->
         <div class="forgot">
-            <a href="#">Забули пароль?</a>
+            <a class="forgot__btn" href="#">Забули пароль?</a>
         </div>
 
     </div>
@@ -56,28 +56,10 @@
     <!-- Посилання для оновлення сторінки -->
     <a id="refresh" value="Оновити" onClick="history.go()">
         <!-- Зображення кнопки оновлення -->
-        <img src="~/images/reload.png" class="refreshicon" width="25px" height="25px">
+        <img src="~/images/reload.png" class="refreshicon" >
     </a>
 
-
 </section>
-<script>
-    let eyeicon = document.getElementById("eyeicon");
-    let password = document.getElementById("password");
-    eyeicon.onclick = function () {
-        if (password.type == "password") {
-            password.type = "text";
-            eyeicon.src = "/images/password_show.png"
-        }
-        else {
-            password.type = "password";
-            eyeicon.src = "/images/password_hide.png"
-        }
-    }
 
-</script>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+<script src="~/js/Login/Login.js" defer></script>
 

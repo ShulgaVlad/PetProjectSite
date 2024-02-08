@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2pKpNtjJr/reSr6cVWgGlIHV4XBM7u760ShaRVxn4A0=",
+  "Hash": "wgSMtp+ieA/vGBj8RRbEKVcL/pP8jTqOwZa52QTDVcQ=",
   "Source": "PetProjSite",
   "BasePath": "_content/PetProjSite",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\css\\Layout.css"
     },
     {
-      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login.css",
+      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login\\checkbox.css",
       "SourceId": "PetProjSite",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\",
       "BasePath": "_content/PetProjSite",
-      "RelativePath": "css/Login.css",
+      "RelativePath": "css/Login/checkbox.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,15 +90,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Login.css"
+      "OriginalItemSpec": "wwwroot\\css\\Login\\checkbox.css"
     },
     {
-      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-Admin.css",
+      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login\\Login.css",
       "SourceId": "PetProjSite",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\",
       "BasePath": "_content/PetProjSite",
-      "RelativePath": "css/Login-Admin.css",
+      "RelativePath": "css/Login/Login.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,15 +109,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Login-Admin.css"
+      "OriginalItemSpec": "wwwroot\\css\\Login\\Login.css"
     },
     {
-      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-Singup.css",
+      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login\\Login-Admin.css",
       "SourceId": "PetProjSite",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\",
       "BasePath": "_content/PetProjSite",
-      "RelativePath": "css/Login-Singup.css",
+      "RelativePath": "css/Login/Login-Admin.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Login-Singup.css"
+      "OriginalItemSpec": "wwwroot\\css\\Login\\Login-Admin.css"
     },
     {
       "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Login-stile-integrated.css",
@@ -891,12 +891,12 @@
       "OriginalItemSpec": "wwwroot\\js\\index.js"
     },
     {
-      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\js\\Login.js",
+      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\js\\Login\\Login.js",
       "SourceId": "PetProjSite",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\",
       "BasePath": "_content/PetProjSite",
-      "RelativePath": "js/Login.js",
+      "RelativePath": "js/Login/Login.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -907,7 +907,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Login.js"
+      "OriginalItemSpec": "wwwroot\\js\\Login\\Login.js"
     },
     {
       "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\js\\site.js",
