@@ -3,6 +3,7 @@ body {
 	font-family: Roboto, Consolas;
 	min-height: 100vh;
 	background-color: #faeee7;
+	overflow: hidden;
 }
 
 	/* Заборона відображення обводки (фокусу) тільки при натисканні Escape */

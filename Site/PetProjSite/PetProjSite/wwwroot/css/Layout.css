@@ -69,7 +69,9 @@ footer {
 	right: -300px; /* «м≥нено на в≥дносну одиницю */
 	width: 300px;
 	height: 100%;
+	top: 60px;
 	transition: right 0.3s ease;
+	background-color: #00000000;
 	z-index: 1000;
 }
 
