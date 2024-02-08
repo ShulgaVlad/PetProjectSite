@@ -10,10 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleButton.addEventListener('click', function () {
         // Toggle the menu's position on button click
         if (menu.classList.contains('menu-open')) {
-            menu.style.right = '-300px';
             menu.classList.remove('menu-open');
         } else {
-            menu.style.right = '0px';
             menu.classList.add('menu-open');
         }
     });
