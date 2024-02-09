@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Catalog.css",
-      "PackagePath": "staticwebassets\\css\\Catalog.css"
-    },
-    {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Home.css",
       "PackagePath": "staticwebassets\\css\\Home.css"
     },
@@ -43,6 +39,10 @@
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Site\\site.css",
       "PackagePath": "staticwebassets\\css\\Site\\site.css"
+    },
+    {
+      "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\catalog.css",
+      "PackagePath": "staticwebassets\\css\\catalog.css"
     },
     {
       "Id": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\favicon.ico",

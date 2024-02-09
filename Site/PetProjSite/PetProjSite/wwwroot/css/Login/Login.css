@@ -1,8 +1,7 @@
 /*Кольори градієнту*/
 :root {
-	--background-gradient-from: #ffa5d416;
-	--background-gradient-to: #ff46a73f;
 }
+
 
 * {
 	box-sizing: border-box;
@@ -15,7 +14,7 @@ li {
 	text-align: left;
 	text-transform: uppercase;
 	padding-right: 10px;
-	color: #ffffff;
+	color: white;
 }
 
 label {
@@ -25,7 +24,7 @@ label {
 	padding-left: 15px;
 	padding-bottom: 10px;
 	margin-top: 20px;
-	color: #000000cb;
+	color: #000000cd;
 	display: block;
 }
 
@@ -75,7 +74,7 @@ label {
 	margin-left: 50px;
 	margin-right: 150px;
 	padding-bottom: 0;
-	color: rgb(122, 122, 122);
+	color: #00000085;
 	text-decoration: none;
 	border-bottom: none;
 	cursor: pointer;
@@ -91,7 +90,7 @@ label {
 
 .Login__signup-inactive a {
 	cursor: pointer;
-	color: rgb(161, 161, 161);
+	color: #00000085;
 	text-decoration: none;
 	transition: all .25s ease;
 }
@@ -106,8 +105,7 @@ label {
 
 	.Login__form-signin input:focus {
 		background: rgba(255,255,255,.3);
-		border: none;
-		padding-right: 40px;
+		outline: 2px solid var(--background-color-footer);
 		transition: background .5s ease;
 	}
 
@@ -116,8 +114,10 @@ label {
 	height: 35px;
 	font-size: 13px;
 	padding-left: 15px;
+	padding-right: 15px;
 	border: none;
 	color: black;
+	outline: 0px solid var(--background-color-footer);
 	border-radius: 20px;
 	background: #ffffff;
 }
@@ -144,7 +144,7 @@ label {
 	margin: 0;
 	right: 10px;
 	top: 30px;
-	opacity: 50%;
+	opacity: 70%;
 }
 
 .Login__submit {
@@ -165,13 +165,12 @@ label {
 	height: 32px;
 	margin: 0;
 	border-radius: 20px;
-	background-color: rgb(255, 94, 234);
 	transition: filter .1s, background-color .1s, height .1s,font-size .1s,margin-top .1s,padding .1s;
 }
 
 	.Login__btn-signin:hover {
 		cursor: pointer;
-		background-color: rgb(255, 78, 216);
+		background-color: var(--background-color-button-hover);
 		filter: drop-shadow(0 0px 5px rgba(0, 0, 0, 0.2)); /* Задайте параметри для тіні (offset-x offset-y blur-radius color) */
 	}
 
@@ -189,7 +188,7 @@ label {
 	margin-right: auto;
 	text-align: center;
 	padding-top: 24px;
-	border-top: solid 1px rgb(96, 96, 96);
+	border-top: solid 1px black;
 	transition: all 0.5s ease;
 }
 
@@ -198,7 +197,7 @@ label {
 }
 
 .forgot a {
-	color: rgb(96, 96, 96);
+	color: black;
 	font-weight: 400;
 	font-size: 13px;
 	text-decoration: none;

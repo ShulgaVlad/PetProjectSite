@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wgSMtp+ieA/vGBj8RRbEKVcL/pP8jTqOwZa52QTDVcQ=",
+  "Hash": "V2eiQLU3+5ELuLWx6tURfL1FEn11T87aaQuTj2KFuPQ=",
   "Source": "PetProjSite",
   "BasePath": "_content/PetProjSite",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Catalog.css",
+      "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\catalog.css",
       "SourceId": "PetProjSite",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\",
       "BasePath": "_content/PetProjSite",
-      "RelativePath": "css/Catalog.css",
+      "RelativePath": "css/catalog.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,7 +33,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Catalog.css"
+      "OriginalItemSpec": "wwwroot\\css\\catalog.css"
     },
     {
       "Identity": "E:\\Files\\Vlad\\Wab\\PetProjectSite\\Site\\PetProjSite\\PetProjSite\\wwwroot\\css\\Home.css",

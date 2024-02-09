@@ -12,8 +12,8 @@
         {
 
             <div class=Products__block>
-                <div class="Products__img">
-                    <img src="@product.product_photo">
+                <div class="Products__img Products__img-hover">
+                    <figure><img src="@product.product_photo"></figure>
                 </div>
                 <div class="Products__text">
                     @product.product_description
@@ -42,3 +42,25 @@
         }
     </div>
 </section>
+
+<button id="show" class="Button">
+    Переглянути
+</button>
+<div class="Product" id="overlay">
+    <!-- Зміст блоку Products__info -->
+    <div class="Product__block">
+
+        <div class="Product__img">
+            <img src="https://i.imgur.com/yEA8ELv.jpeg">
+        </div>
+
+        <div class="Product__text">
+            <p>Назва</p>
+            <h3>Опис</h3>
+            <p>текст</p>
+            <h3>Характеристики</h3>
+            <p>текст</p>
+            
+        </div>
+    </div>
+</div>

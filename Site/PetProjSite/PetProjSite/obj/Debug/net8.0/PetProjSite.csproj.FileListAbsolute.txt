@@ -176,9 +176,7 @@ E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\s
 E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PetProjSite.props
 E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PetProjSite.props
 E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\staticwebassets.pack.json
-E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\scopedcss\bundle\PetProjSite.styles.css
-E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\scopedcss\projectbundle\PetProjSite.bundle.scp.css
 E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\PetProjSite.csproj.CopyComplete
 E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\PetProjSite.dll
 E:\Files\Vlad\Wab\PetProjectSite\Site\PetProjSite\PetProjSite\obj\Debug\net8.0\refint\PetProjSite.dll

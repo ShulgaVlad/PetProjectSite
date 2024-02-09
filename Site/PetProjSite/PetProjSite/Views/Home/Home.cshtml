@@ -3,7 +3,8 @@
 <!-- загальна бібліотека
 <<link rel="stylesheet" href="~/PetProjSite.styles.css" asp-append-version="true" /> -->
 
-<link rel="stylesheet" type="text/css" href="~/css/Home.css">
+<link rel="stylesheet" type="text/css" href="~/css/Home/Home.css">
+<link rel="stylesheet" type="text/css" href="~/css/Home/Home-buttons.css">
 
 
 
@@ -22,7 +23,12 @@
         </button>
 
         <div class="Main__contact-button Main__button_number">
-            <span class="text__number">+38(068)999 99-99</span>
+            <span class="text__number">
+                <p id="copyText" onclick="copyToClipboard('copyText')">
+                    +38(068)999 99-99
+                </p>
+            </span>
+
         </div>
 
         <button class="Button">
@@ -53,8 +59,8 @@
             </strong>
         </h4>
         <div class="screen__buttons">
-            <button class="Button button_about_me">Про мене</button>
-            <button class="Button button_catalog" style="background-color:white">Каталог товарів</button>
+            <button class="Button">Про мене</button>
+            <button class="Button" style="background-color:var(--background-color-box)">Каталог товарів</button>
         </div>
     </div>
 
@@ -63,41 +69,30 @@
 </section>
 
 <section class="bio">
+    <div class="bio__about-me-group-img">
+        <img src="~/images/portrait.png" alt="Your Image">
+        <div class="bio__about-me-img-bg"></div>
+        <div class="bio__about-me-img-line"></div>
+    </div>
 
-    <div class="bio__about-me">
-
-        <div class="bio__about-me-group-img">
-            <img src="~/images/portrait.png" alt="Your Image">
-            <div class="bio__about-me-img-bg"></div>
-            <div class="bio__about-me-img-line"></div>
-        </div>
-
+    <div class="bio__text">
 
         <div class="bio__about-me-text">
-            <h2 style="font-size:42px"><strong>Про  мене</strong></h2>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
+            <h3><strong>Про  мене</strong></h3>
+            <p style="font-size:24px">
+                Доброго дня! Мене звуть Майя, і я - дизайнерка спідньої білизни, присвячена створенню унікальних та особливих виробів, які виражають індивідуальність та стиль кожної людини. Мій підхід до дизайну базується на ретельній ручній роботі та індивідуальному підході до кожного клієнта. 
+            </p>
         </div>
 
-    </div>
-    <div class="bio__about-me">
-        <div class="bio__about-me-text" style="display:inline-block;">
-            <h2 style="font-size:42px">
+        <div class="bio__about-me-text">
+            <h3>
                 <strong>
                     Як я працюю <br>з клієнтами
                 </strong>
-            </h2>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
-            <p style="font-size:24px">Text</p>
+            </h3>
+            <p style="font-size:24px">Кожна деталь моїх творінь шиється індивідуально, враховуючи особливості тіла та особисті вподобання. Моя мета полягає в тому, щоб кожна людина відчувала себе комфортно та унікально у моїй білизні, яка відзначається не лише естетикою, але й увагою до деталей. Раджу вам відчути цю неповторну атмосферу особистості та тепла у кожному виробі, створеному мною.</p>
         </div>
+
     </div>
 
 </section>

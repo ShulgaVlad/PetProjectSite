@@ -1,0 +1,160 @@
+
+/* блок кнопки home та my_services */
+.MainMenu {
+	display: flex;
+	position: absolute;
+	height: 42px;
+	align-items: center;
+}
+
+.MainMenu_left {
+	left: 20%;
+}
+
+	.MainMenu_left .my_services {
+		font-size: 24px;
+		left: 20%;
+	}
+
+@media (max-width: 1024px) {
+
+	.MainMenu_left {
+		left: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.MainMenu_left {
+		left: 20px;
+	}
+
+		.MainMenu_left .my_services {
+			font-size: 16px;
+		}
+}
+
+
+
+.MainMenu_right {
+	visibility: visible;
+	right: 20%;
+}
+
+
+
+@media (max-width: 768px) {
+	.MainMenu_right {
+		right: 100px;
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 1024px) {
+	.MainMenu_right {
+		right: 50px;
+	}
+}
+
+.Button_Home img {
+	/*filter: invert(1) drop-shadow( 0 0 2px #00000083);  Це оберне кольори */
+}
+
+
+
+/* вертикальна лінія*/
+.MainMenu__line-1 {
+	margin: 0 10px 0 10px;
+	width: 0px;
+	height: 28px;
+	border: 1px solid black;
+}
+
+.my_services {
+	padding: 0;
+	bottom: 0;
+	background-color: #00000000;
+	overflow: hidden;
+	border: none;
+	color: #ffffffe0;
+	font-family: Roboto, Consolas;
+	font-weight: 100;
+	letter-spacing: 0;
+	cursor: pointer;
+	filter: drop-shadow( -1px 1px 2px #00000083);
+}
+
+
+
+footer {
+	height: 440px;
+	width: 100%;
+	background-color: var(--background-color-footer);
+}
+
+.footer__text {
+	padding: 20px 0 0 80px;
+	width: 300px;
+	color: black;
+}
+
+	.footer__text * {
+		display: inline-block;
+	}
+
+.footer__Call-Me {
+	width: 450px;
+	height: 380px;
+	text-align: center;
+	background-color: white;
+	margin: 20px 200px 0 0;
+	border-radius: 8px;
+}
+
+	.footer__Call-Me h1 {
+		margin-top: 20px;
+	}
+
+.footer_butons {
+	margin-left: 80px;
+	height: 30px;
+}
+
+	.footer_butons Button {
+		margin: 0 5px 0 5px;
+	}
+
+.Button_menu {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+@media (min-width: 768px) {
+	.Button_menu {
+		visibility: hidden;
+	}
+}
+
+
+#menu {
+	background-color: #C79F87;
+	position: absolute;
+	right: -300px;
+	width: 300px;
+	padding-bottom: 20px;
+	top: 0px;
+	transition: right 0.3s ease;
+	z-index: 1000;
+}
+
+	#menu.menu-open {
+		right: 0%;
+	}
+
+
+.hover-button-container {
+	display: inline-block;
+	position: relative;
+	height: 42px;
+}

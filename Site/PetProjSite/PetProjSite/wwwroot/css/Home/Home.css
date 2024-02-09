@@ -1,0 +1,130 @@
+.Main {
+	display: flex;
+	position: relative;
+	padding: 40px 30px 20px 30px;
+	background-color: var(--background-color-box);
+}
+
+.Main__contact {
+	display: flex;
+	position: absolute;
+	right: 450px;
+	align-items: center;
+}
+
+.Main__contact-button {
+	text-decoration: none;
+	font-family: Roboto, Consolas, Arial;
+	color: black;
+	font-size: 20px;
+	margin: 0 50px 0 0;
+	padding: 0;
+	background-color: #00000000;
+	border: none;
+	cursor: pointer;
+}
+
+.Screen {
+	position: relative;
+	height: 580px;
+	overflow: hidden;
+}
+
+	.Screen img {
+		width: 100%;
+		object-fit: cover;
+	}
+
+.screen__container {
+	position: absolute;
+	top: 120px;
+	left: 220px;
+}
+
+.screen__buttons {
+	position: absolute;
+	top: 360px;
+	left: 0px;
+}
+
+.bio {
+	display: flex;
+	padding: 100px 100px;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+.bio__about-me-group-img {
+	width: 441px;
+	height: 615px;
+	position: relative;
+	/*background-color: var(--background-color-box);*/ 
+	border-radius: 5px;
+}
+
+	.bio__about-me-group-img img {
+		position: absolute;
+		width: 406px;
+		height: 600px;
+		left: 35px;
+		top: 0px;
+		z-index: 1;
+	}
+
+.bio__about-me-img-bg {
+	position: absolute;
+	background-color: #937E62;
+	width: 406px;
+	height: 600px;
+	top: 15px;
+	left: 0px;
+	z-index: 0;
+}
+
+.bio__about-me-img-line {
+	position: absolute;
+	transform: rotate(-38deg);
+	background-color: black;
+	height: 750px;
+	width: 1px;
+	left: 220px;
+	top: -65px;
+}
+
+.bio__text {
+	display: inline-block;
+	width: 60%;
+	padding: 50px;
+	justify-content: center;
+}
+
+.bio__about-me-text {
+	padding: 20px;
+	margin-bottom: 2px;
+	width: 100%;
+	display: block;
+	background-color: var(--background-color-box);
+	border-radius: 5px;
+}
+
+.portfolio {
+}
+
+
+
+
+
+.portfolio__imgs {
+	height: 100%;
+	padding: 0 20% 100px 20%;
+	margin: 50px auto 0 auto;
+	text-align: center;
+}
+
+	.portfolio__imgs img {
+		width: 350px;
+		height: 350px;
+		display: inline-block;
+		margin: 10px; /* Можете змінити це значення відстані між зображеннями */
+	}

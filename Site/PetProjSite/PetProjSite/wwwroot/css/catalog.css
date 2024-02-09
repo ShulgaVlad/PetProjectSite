@@ -1,7 +1,4 @@
-﻿:root {
-	--background-gradient-from: #c79f8153;
-	--background-gradient-to: #C79F87;
-}
+﻿
 
 
 .Products {
@@ -22,11 +19,13 @@
 	margin: 20px;
 	padding: 20px;
 	border-radius: 8px;
+	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+	color: white;
 }
 
 .Products__img {
 	display: flex;
-	width: 220px;
+	width: 100%;
 	height: 220px;
 	align-items: center;
 	justify-content: center;
@@ -34,9 +33,8 @@
 }
 
 	.Products__img img {
-		max-height: 220px;
-		max-width: 100%;
-		height: auto;
+		height: 100%;
+		width: 100%;
 	}
 
 .Products__text {
@@ -47,17 +45,126 @@
 
 
 .Products__BoxButton {
-	height: 30px;
 	justify-content: center;
 	position: relative;
 	align-items: center;
 }
 
 	.Products__BoxButton Button {
-		background-color: #faeee7;
+		background-color: var(--background-color-button);
 	}
-	.Products__buttons-admin {
+
+.Products__form {
+	display: inline-block;
+}
+
+.Products__buttons-admin {
 	font-size: 14px;
-	min-height: 10px;
 	height: 20px;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.Product {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000cc;
+	display: none;
+	z-index: 5; /* Задайте більше значення з-index, щоб вікно було поверх інших елементів */
+}
+
+
+
+	.Product.showOverlay {
+		display: block;
+	}
+
+.Product__block {
+	display: flex;
+	width: 1200px;
+	height: 800px;
+	margin: 200px auto;
+	padding: 50px;
+	border-radius: 4px;
+	background-color: #faeee7;
+}
+
+.Product__img {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+}
+
+	.Product__img img {
+		max-height: 220px;
+		max-width: 100%;
+		height: auto;
+		border-radius: 4px;
+	}
+
+.Product__text {
+	width: 50%;
+	padding: 0 0 0 20px;
+}
+
+
+
+
+
+
+
+
+/* Shine */
+.Products__img-hover figure {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+
+
+	.Products__img-hover figure::before {
+		position: absolute;
+		top: 0;
+		left: -75%;
+		z-index: 2;
+		display: block;
+		content: '';
+		width: 50%;
+		height: 100%;
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+		-webkit-transform: skewX(-25deg);
+		transform: skewX(-25deg);
+	}
+
+	.Products__img-hover figure:hover::before {
+		-webkit-animation: shine .75s;
+		animation: shine .75s;
+	}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
 }

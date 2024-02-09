@@ -1,32 +1,35 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\Shared\Layout-buttons.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="Views\Login\Login.cshtml" />
-    <None Include="wwwroot\css\Layout.css" />
+    <None Include="wwwroot\css\Shared\Layout-buttons.css" />
+    <None Include="wwwroot\css\Shared\Layout.css" />
     <None Include="wwwroot\js\index.js" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\css\Profile\" />
     <Folder Include="wwwroot\css\Registration\" />
-    <Folder Include="wwwroot\css\Shared\" />
     <Folder Include="wwwroot\css\Catalog\" />
-    <Folder Include="wwwroot\css\Home\" />
   </ItemGroup>
 
 </Project>

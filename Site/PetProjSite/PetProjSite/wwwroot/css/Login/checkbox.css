@@ -46,7 +46,7 @@
 
 		/* on checked */
 		[type="checkbox"]:checked + label:before {
-			background: rgb(255, 94, 234);
+			background: var(--background-color-button);
 		}
 
 		[type="checkbox"]:checked + label:after {

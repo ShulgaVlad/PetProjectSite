@@ -15,7 +15,7 @@ namespace PetProjSite.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Home" , "Home");
         }
 
         public IActionResult Home()

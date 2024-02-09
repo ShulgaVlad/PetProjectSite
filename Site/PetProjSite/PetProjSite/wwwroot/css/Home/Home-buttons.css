@@ -1,0 +1,21 @@
+
+.Main__contact-button_portfolio, .Main__contact-button_contacts, .Main__contact-button_number {
+}
+
+
+
+.button_catalog {
+	color: black;
+}
+
+.text-portfolio:hover {
+	color: #813CB9;
+}
+
+.text__contacts:hover {
+	color: #813CB9;
+}
+
+.Main__contact-button:hover {
+	color: #813CB9;
+}

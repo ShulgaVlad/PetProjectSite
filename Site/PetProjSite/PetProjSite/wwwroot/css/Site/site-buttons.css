@@ -3,11 +3,10 @@
 	display: inline-flex; /* Встановлює тип відображення елемента як "inline-flex", що дозволяє використовувати гнучкий контейнер із властивостями flexbox */
 	box-sizing: border-box; /* Визначає властивість box-sizing для коректного врахування границь та внутрішніх заповнень */
 	flex-direction: row; /* Задає напрямок розташування елементів у flex-контейнері (горизонтально) */
-	position: relative; /* Визначає позицію елемента */
 	height: 42px; /* Задає висоту та ширину елемента */
 	padding: 0 12px; /* Задає внутрішні відступи елемента */
 	margin: 10px 5px;
-	background-color: #ffc6c7; /* Задає колір тла кнопки */
+	background-color: var(--background-color-button); /* Задає колір тла кнопки */
 	font-size: 24px; /* Задає розмір шрифту */
 	/*overflow: hidden;  Визначає властивість overflow для обробки вмісту, що виходить за межі елемента */
 	border-radius: 5px; /* Задає радіус скруглення кутів елемента */
@@ -15,28 +14,26 @@
 	border: none; /* Задає границю елемента */
 	outline: 2px solid transparent; /* Встановлюємо початковий стан для анімації */
 	outline-offset: 4px;
-	font-weight: bold; /* Задає товщину шрифту */
-	color: black; /* Задає колір тексту кнопки */
+	font-weight: 400; /* Задає товщину шрифту */
+	font-family: Calibri;
+	color: #000000d0; /* Задає колір тексту кнопки */
 	align-items: center; /* Визначає вирівнювання елементів вздовж перехідної (cross) осі */
 	transition: outline-color 0.3s, background-color 0.3s, filter 0.3s;
 }
 
 	.Button:hover {
-		filter: drop-shadow(0 0px 5px rgba(0, 0, 0, 0.2)); /* Задайте параметри для тіні (offset-x offset-y blur-radius color) */
+		color: #000000;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+		/*filter: drop-shadow(-1 1px 5px rgba(0, 0, 0, 1));  Задайте параметри для тіні (offset-x offset-y blur-radius color) */
 	}
 
-	.Button img {
-		height: 30px;
-		width: 30px;
-		overflow: visible;
-		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	}
+.Button_text {
+	background-color: #00000000;
+}
 
-
-	.Button:focus-visible {
-		outline: 2px solid;
-		outline-color: black;
-		outline-offset: 4px;
+	.Button_text:hover {
+		filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5));
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 	}
 
 .Button_ico {
@@ -49,11 +46,33 @@
 }
 
 	.Button_ico:hover {
+		filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5));
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 	}
+
+
+
+.Button img {
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.Button:focus-visible {
+	outline: 2px solid;
+	outline-color: black;
+	outline-offset: 4px;
+}
+
+
+
+.Button_ico:hover {
+}
 
 a {
 	all: unset;
-	position: relative;
 	font-size: 24px;
 	font-weight: bold;
 }

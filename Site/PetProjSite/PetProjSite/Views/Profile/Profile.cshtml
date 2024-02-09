@@ -19,33 +19,21 @@
     <link rel="stylesheet" type="text/css" href="~/css/Profile.css">
 <body>
     <main>
-        <section>
-            <div class="Profile-bg">
+        <section class="Profile">
                 <h2 style="text-align:center; padding-top:20px;"><strong>Особистий кабінет</strong></h2>
 
                 <h3 style="margin:20px 0 0 50px">Особисті дані</h3>
 
                 <div class="profile__table">
-
-                    <ol>
-                        <li>
                             <h5>Прізвище</h5>
 
                             <h4>@LoginController.LoggedUser.surname</h4>
-                        </li>
-                        <li>
                             <h5>Ім'я</h5>
                             <h4>@LoginController.LoggedUser.first_name</h4>
-                        </li>
-                        <li>
                             <h5>Email</h5>
                             <h4>@LoginController.LoggedUser.e_mail</h4>
-                        </li>
-                        <li>
                             <h5>Телефон</h5>
                             <h4>@LoginController.LoggedUser.phone_number</h4>
-                        </li>
-                    </ol>
                 </div>
                 <h3 style="margin:20px 0 0 50px">Зміна паролю</h3>
                 <ol style="list-style: none; padding:10px 30px 50px 30px;">
@@ -60,8 +48,6 @@
                         </button>
                     </li>
                 </ol>
-
-            </div>
         </section>
     </main>
 

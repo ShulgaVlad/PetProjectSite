@@ -1,0 +1,10 @@
+:root {
+	--background-color-footer: #E3C9B5;
+	--background-color-header: #E3C9B5;
+	--background-color-body: #fff6ee;
+	--background-color-button: #e2cfbd;
+	--background-color-button-hover: #F4EAE1;
+	--background-color-box: #fff6ee;
+	--background-gradient-from: #fff6ee;
+	--background-gradient-to: ##E3C9B5;
+}
